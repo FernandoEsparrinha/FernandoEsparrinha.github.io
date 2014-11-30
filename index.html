@@ -4,13 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/css.css" type="text/css">
+        <script type="text/javascript" src="js/js.js"></script>
     </head>
     <body>
+
+        
+        
+        
+
     	<div id="main">
 
             <img src="resources/face.bmp" id="face"> <h3 id="name">Fernando Pinto<br>Informatic Engineer</h3>
             <div id="Skills">
-                <h2>.showSkills()</h2>
+                <h2>
+                    <p class="langHack">.showSkills()</p>
+                    <p class="langNoob">Skills</p>
+                </h2>
                 <ul>
                         <li>C</li>
                         <li>C++</li>
@@ -21,14 +30,20 @@
                         <li>Javascript</li>
                 </ul>  
 
-                <h2>.showProjects()</h2>
+                <h2>
+                    <p class="langHack">.showProjects()</p>
+                    <p class="langNoob">Projects</p>        
+                </h2>
                 <ul>
                         <li>+InfoPorto</li>
                         <li>Soundanoid</li>
                         <li>JWallet</li>
                 </ul> 
 
-                <h2>.contact()</h2>
+                <h2>
+                    <p class="langHack">.contact()</p>
+                    <p class="langNoob">Contacts</p>        
+                </h2>
                 <ul>
                         <li>
                             <a href="https://pt.linkedin.com/pub/fernando-pinto/94/16b/903/">LinkedIn</a>      
@@ -42,6 +57,8 @@
                 </ul>  
             </div>
         </div>
+
+        <div class="toggleSwitch" onclick="toggle(this.firstChild, 'on', 'off');"><div class="slider on" /></div></div>
 
         <div id="construction">
             <p>Under Construction !</p>

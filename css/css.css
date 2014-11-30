@@ -15,6 +15,30 @@ body {
 	font: ;
 }
 
+.toggleSwitch {
+    width: 50px;
+    height: 25px;
+    /* add other styling as appropriate to position element */
+    position: relative;
+
+    border: 2px solid white;
+
+    float:right;
+}
+.slider {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.slider.on {
+    left: 0;
+    background-color: green;
+}
+.slider.off {
+    right: 0;
+    background-color: red;
+}
+
 #main {
 	width: 20%;
 	height: 60%;
@@ -60,5 +84,9 @@ body {
 	bottom: 0;
 	color: yellow;
 	border: 2px solid yellow;
+	border-left: none;
 	padding-left: 45%;
 }
+
+.langHack {display: inline;}
+.langNoob {display: none;}
