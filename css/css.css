@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-	width: 800px;
+	width: 380px;
 	height: 600px;
 	border: 2px solid #085912;
 	position: absolute;
@@ -46,7 +46,7 @@ body {
 
 #main #skills {
 	margin-top: 50px;
-	margin-left: 100px;
+	margin-left: 50px;
 	color: #085912;
 }
 
