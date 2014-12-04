@@ -16,14 +16,14 @@ body {
 
 .toggleSwitch {
     width: 50px;
-    height: 25px;
+    height: 60px;
     /* add other styling as appropriate to position element */
     position: absolute;
 
     margin-right: 1%;
     margin-top: 1%;
     border: 2px solid white;
-
+    cursor: pointer;
     right: 0;
 }
 .slider {
@@ -116,5 +116,15 @@ body {
 	padding-left: 45%;
 }
 
-.langHack {display: inline;}
-.langNoob {display: none;}
+.hk {
+	display: inline;
+	cursor: pointer;
+}
+.en {
+	display: none;
+	cursor: pointer;
+}
+.pt {
+	display: none;
+	cursor: pointer;
+}
