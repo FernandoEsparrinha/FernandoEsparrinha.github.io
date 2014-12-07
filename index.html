@@ -17,11 +17,11 @@
             <img src="resources/face.bmp" id="face"> <h3 id="name">Fernando Pinto</h3>
             <div id="skills">
                 <h2>
-                    <p class="hk">.showSkills(){</p>
+                    <p class="hk" onclick="switchState(1);">.showSkills(){</p>
                     <p class="en">Skills</p>
                     <p class="pt">Aptidões</p>
                 </h2>
-                <ul>
+                <ul id="skillsList">
                         <li>C</li>
                         <li>C++</li>
                         <li>Asm</li>
@@ -29,25 +29,27 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Javascript</li>
-                </ul>  
+                </ul>
+                <p id="skillsClosed">...</p>  
                 <h2><p class="hk">}</p></h2> 
                 <h2>
-                    <p class="hk">.showProjects(){</p>
+                    <p class="hk" onclick="switchState(2);">.showProjects(){</p>
                     <p class="en">Projects</p>  
                     <p class="pt">Projectos</p>      
                 </h2>
-                <ul>
+                <ul id="projectsList">
                         <li>+InfoPorto</li>
                         <li>Soundanoid</li>
                         <li>JWallet</li>
                 </ul> 
+                <p id="projectsClosed">...</p>
                 <h2><p class="hk">}</p></h2> 
                 <h2>
-                    <p class="hk">.contact(){</p>
+                    <p class="hk" onclick="switchState(3);">.contact(){</p>
                     <p class="en">Contacts</p>
                     <p class="pt">Contactos</p>        
                 </h2>
-                <ul>
+                <ul id="contactsList">
                         <li>
                             <a href="https://pt.linkedin.com/pub/fernando-pinto/94/16b/903/" target='_new'>LinkedIn</a>      
                         </li>
@@ -58,6 +60,7 @@
                             <a href="https://bitbucket.org/FernandoPinto" target='_new'>BitBucket</a>
                         </li>
                 </ul>  
+                <p id="contactsClosed">...</p>
                 <h2><p class="hk">}</p></h2>    
             </div>
         </div>
@@ -67,9 +70,9 @@
         </div>
 
         <div class="toggleSwitch"> 
-            <img src="resources/pt.png" style="width: 20px; height: 20px;" onclick="switchLanguage(1);"></img>
-            <img src="resources/en.png" style="width: 20px; height: 20px;" onclick="switchLanguage(3);"></img>
-            <img src="resources/bin.png" style="width: 20px; height: 20px;" onclick="switchLanguage(2);"></img>
+            <img id="ptImg" src="resources/pt.png" style="width: 20px; height: 20px;" onclick="switchLanguage(1);"></img>
+            <img id="enImg" src="resources/en.png" style="width: 20px; height: 20px;" onclick="switchLanguage(3);"></img>
+            <img id="hkImg" src="resources/bin.png" style="width: 20px; height: 20px;" onclick="switchLanguage(2);"></img>
         </div>
 
 

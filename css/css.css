@@ -42,12 +42,12 @@ body {
 
 #personal #name {
 	margin-top: 10%;
-	margin-left: 48%;
+	margin-left: 110px;
 	color: #085912;
 }
 
 #personal #skills {
-	margin-top: 25%;
+	margin-top: 15%;
 	margin-left: 10%;
 	color: #085912;
 
@@ -56,7 +56,7 @@ body {
 
 	padding: 2%;
 	width: 80%;
-	height: 70%;
+	height: 85%;
 }
 
 #personal #skills a {
@@ -101,12 +101,19 @@ body {
     cursor: pointer;
     right: 0;
 }
-.hk {
-	display: inline;
-}
-.en {
-	display: none;
-}
-.pt {
-	display: none;
-}
+
+.hk {display: inline;}
+.en {display: none;}
+.pt {display: none;}
+
+#ptImg{border:0;border-radius: 2px;}
+#enImg{border:0;border-radius: 2px;}
+#hkImg{border:2px solid white;border-radius: 2px;}
+
+#skillsClosed{display: inline;}
+#projectsClosed{display: inline;}
+#contactsClosed{display: inline;}
+
+#skillsList{display: none;}
+#projectsList{display: none;}
+#contactsList{display: none;}
