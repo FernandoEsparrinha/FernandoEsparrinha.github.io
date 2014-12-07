@@ -14,21 +14,6 @@ body {
 	color: white;
 }
 
-.toggleSwitch {
-    width: 25px;
-    height: 70px;
-    /* add other styling as appropriate to position element */
-    position: absolute;
-
-    margin-right: 1%;
-    margin-top: 1%;
-    border: 2px solid white;
-    cursor: pointer;
-    right: 0;
-}
-
-
-
 #personal {
 	width: 20%;
 	height: 80%;
@@ -57,12 +42,12 @@ body {
 
 #personal #name {
 	margin-top: 10%;
-	margin-left: 150px;
+	margin-left: 50%;
 	color: #085912;
 }
 
 #personal #skills {
-	margin-top: 15%;
+	margin-top: 25%;
 	margin-left: 10%;
 	color: #085912;
 
@@ -105,6 +90,18 @@ body {
 	border: 2px solid yellow;
 	border-left: none;
 	padding-left: 45%;
+}
+
+
+.toggleSwitch {
+    width: 25px;
+    height: 70px;
+    position: absolute;
+
+    margin-right: 1%;
+    margin-top: 1%;
+    cursor: pointer;
+    right: 0;
 }
 
 .hk {
