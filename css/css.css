@@ -15,8 +15,8 @@ body {
 }
 
 .toggleSwitch {
-    width: 50px;
-    height: 60px;
+    width: 25px;
+    height: 70px;
     /* add other styling as appropriate to position element */
     position: absolute;
 
@@ -26,19 +26,8 @@ body {
     cursor: pointer;
     right: 0;
 }
-.slider {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-}
-.slider.on {
-    left: 0;
-    background-color: green;
-}
-.slider.off {
-    right: 0;
-    background-color: red;
-}
+
+
 
 #personal {
 	width: 20%;
@@ -77,6 +66,8 @@ body {
 	margin-left: 10%;
 	color: #085912;
 
+	overflow-x: hidden;
+	overflow-y: auto;
 
 	padding: 2%;
 	width: 80%;
