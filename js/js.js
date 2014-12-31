@@ -1,5 +1,6 @@
 
 
+
 function switchLanguage(language){
         
     if (language == 1){
@@ -116,4 +117,12 @@ function switchState(state){
     }
 }
 
+function switchActiveProject(project){
+    var p = document.getElementById(project);
+    if(p.style.display == "none"){
+        p.style.display = "inline";
+    } else {
+        p.style.display = "none";
+    }
+}
 

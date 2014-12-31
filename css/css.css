@@ -14,6 +14,10 @@ body {
 	padding: 5%;
 }
 
+#Jwallet, #Soundanoid {
+	display: none;
+}
+
 #personal {
 	width: 90%; 
 	border: 2px solid #085912;
@@ -45,6 +49,9 @@ body {
 	list-style: none;
 }
 
+#projectsList li {
+	cursor: pointer;
+}
 
 img {
 	max-width: 100%;
@@ -144,12 +151,17 @@ img {
 		height: 85%;
 	}
 
+	#personal #skills {
+		margin-top: 10%;
+	}
+
 	#main {
 		position: fixed;
 		padding: 1%;
 		width: 70%;
 		height: 85%;
 	}
+
 
 	#construction {
 		position: fixed;
