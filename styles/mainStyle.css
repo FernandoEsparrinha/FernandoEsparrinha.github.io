@@ -1,0 +1,131 @@
+
+body {
+	background-color: #010601 !important;
+	font-family: monospace !important;
+	color: #147907 !important;
+}
+
+p {
+	font-size: 0.5em !important;
+
+}
+
+.caixa {
+	background-color: white;
+}
+
+.esconder {
+	display: none;
+}
+
+.link {
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.link:hover {
+	color: #369929;
+	background-color: #eee;
+}
+
+#personal {
+	padding: 1%;
+	margin: 1%;
+	height: 90%;
+	overflow: auto;
+}
+
+#personal #name {
+	display: block;
+	margin-left: 0;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#personal #face {
+	border-radius: 5px;
+	border: 2px solid #085912;
+	width: 40%;
+	max-width: 120px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#personal #skills {
+	margin-top: 80px;
+}
+
+#main {
+	overflow: auto;
+	padding: 1%;
+	margin: 1%;
+	height: 90%;
+}
+
+.projectInfo {
+	border: 2px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-shadow: 10px 10px 20px #eee;
+}
+
+.projectInfo h1 {
+	padding-top: 40px;
+	margin-top: 0;
+	margin-bottom: 50px;
+	
+}
+
+#Soundanoid, #Jwallet, #infoPorto {
+	display: none;
+}
+
+#construction {
+	position: fixed;
+	height: 30px;
+	width: 100%;
+	bottom: 0;
+	color: yellow;
+	border: 2px solid yellow;
+	border-left: none;
+	padding-left: 45%;
+}
+
+.toggleSwitch {
+	width: 25px;
+	height: 70px;
+	position: absolute;
+	margin-right: 1%;
+	margin-top: 1%;
+	cursor: pointer;
+	right: 0;
+}
+
+
+/*Apaga formatacao da lista*/
+#skillsList{list-style: none;}
+#projectsList{list-style: none;}
+#contactsList{list-style: none;}
+
+/*Apenas mostra a linguagem "hacker"*/
+.hk {display: inline;}
+.en {display: none;}
+.pt {display: none;}
+
+/*Formatação dos botoes de mudança de linguagem*/
+#ptImg{border:0;border-radius: 2px;}
+#enImg{border:0;border-radius: 2px;}
+#hkImg{border:2px solid white;border-radius: 2px;}
+
+/*Mostra chavetas nas aptidoes quando seleccionada a linguagem "hacker"*/
+#skillsClosed{display: inline;}
+#projectsClosed{display: inline;}
+#contactsClosed{display: inline;}
+
+/*Não mostra nenhuma lista de aptidoes*/
+#skillsList{display: none;}
+#projectsList{display: none;}
+#contactsList{display: none;}

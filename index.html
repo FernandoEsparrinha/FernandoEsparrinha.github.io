@@ -3,31 +3,36 @@
         <title>Fernando Pinto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="css/css.css" type="text/css">
-        
+        <link rel="stylesheet" href="styles/mainStyle.css" type="text/css">
+        <link rel="stylesheet" href="styles/graphStyle.css" type="text/css">
         <script type="text/javascript" src="js/js.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jq.js"></script>
 
-        <!--<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>-->
-
-        <!--<script type="text/javascript" src="js/jq.js"></script>-->
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
+
     <body>
 
-        
-        
-        
-
-    	<div id="personal">
-
-            <img src="resources/face.bmp" id="face"> <h3 id="name">Fernando Pinto</h3>
-
-            
-
+        <div id="personal" class="col-md-3 caixa">
+            <div>
+                <img src="resources/face.bmp" id="face">
+                <br>
+                <h3 id="name">
+                    Fernando Pinto
+                    <br><br>
+                    <small>
+                        <span class="pt">Engenheiro Informático</span>
+                        <span class="en">Computer Engineer</span>
+                        <span class="hk">Computer Slave</span>
+                    </small>
+                </h3>
+            </div>
             <div id="skills">
                 <h2>
-                    <p class="hk" onclick="switchState(1);">.showSkills(){</p>
+                    <p class="hk" onclick="openBrackets(1);">.showSkills(){</p>
                     <p class="en">Skills</p>
                     <p class="pt">Aptidões</p>
                 </h2>
@@ -43,100 +48,154 @@
                 <p id="skillsClosed">...</p>  
                 <h2><p class="hk">}</p></h2> 
                 <h2>
-                    <p class="hk" onclick="switchState(2);">.showProjects(){</p>
+                    <p class="hk" onclick="openBrackets(2);">.showProjects(){</p>
                     <p class="en">Projects</p>  
                     <p class="pt">Projectos</p>      
                 </h2>
                 <ul id="projectsList">
-                        <li>+InfoPorto (@PortoSummerOfCode)</li>
-                        <li>Soundanoid</li>
-                        <li>JWallet</li>
+                        <li class="link">+InfoPorto (@PortoSummerOfCode)</li>
+                        <li class="link">Soundanoid</li>
+                        <li class="link">JWallet</li>
                 </ul> 
                 <p id="projectsClosed">...</p>
                 <h2><p class="hk">}</p></h2> 
                 <h2>
-                    <p class="hk" onclick="switchState(3);">.contact(){</p>
+                    <p class="hk" onclick="openBrackets(3);">.contact(){</p>
                     <p class="en">Contacts</p>
                     <p class="pt">Contactos</p>        
                 </h2>
                 <ul id="contactsList">
-                        <li>
-                            <a href="https://pt.linkedin.com/pub/fernando-pinto/94/16b/903/" target='_new'>LinkedIn</a>      
-                        </li>
-                        <li>
-                            <a href="https://github.com/FernandoPinto" target='_new'>GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://bitbucket.org/FernandoPinto" target='_new'>BitBucket</a>
-                        </li>
+                        <li><a href="https://pt.linkedin.com/pub/fernando-pinto/94/16b/903/" target='_new'>LinkedIn</a></li>
+                        <li><a href="https://github.com/FernandoPinto" target='_new'>GitHub</a></li>
+                        <li><a href="https://bitbucket.org/FernandoPinto" target='_new'>BitBucket</a></li>
                 </ul>  
                 <p id="contactsClosed">...</p>
                 <h2><p class="hk">}</p></h2>    
             </div>
         </div>
-
-        <div id="main">
-                <div class="en">
-                    <h1>Page no long updated here</h1>
-                    <p>Due to need of more complex funcionalities, this page has moved to <a href="http://fernandopinto.zz.mu/">here</a>. Future updates will all be developed there.</p>
+        <div id="main" class="col-md-8 col-md-offset-1 caixa">
+            <div id="bio">
+                <div class="bargraph" style= "width: 380px;">
+                    <ul class="bars">
+                        <div class="colorfilter" style="width: 365px;"></div>
+                        <li class="bar1 redbar" style="height: 144px;">8<span><img src="resources/java.png" style="width:25px; height:40px;"></span></li>
+                        <li class="bar2 goldbar" style="height: 90px;">5<span><img src="resources/c++.png" style="width:35px; height:35px; left:-3px;"></span></li>
+                        <li class="bar3 greenbar" style="height: 108px;">6<span><img src="resources/c.png" style="width:35px; height:35px; left:-3px;"></span></li> 
+                        <li class="bar4 yellowbar" style="height: 144px;">8<span><img src="resources/html.png" style="width:30px; height:30px; left:-1px;"></span></li>
+                        <li class="bar5 purplebar" style="height: 90px;">5<span><img src="resources/asm.png" style="width:45px; height:25px; left:-8px;"></span></li>
+                    </ul>
+                    <ul class="label">
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>C</li>
+                        <li>Web</li>
+                        <li>Assembly</li>
+                    </ul>
+                    <ul class="y-axis">
+                        <li>
+                            <span class="pt">Alto</span>
+                            <span class="en">High</span>
+                            <span class="hk">Pro</span>
+                        </li>
+                        <li></li>
+                        <li>
+                            <span class="pt">Medio</span>
+                            <span class="en">Medium</span>
+                            <span class="hk" style="margin-left:-15px;">Semi-pro</span>
+                        </li>
+                        <li></li>
+                        <li>
+                            <span class="pt">Fraco</span>
+                            <span class="en">Poor</span>
+                            <span class="hk" style="margin-left:-10px;">Amateur</span>
+                        </li>
+                    </ul>
+                    <p class="centered">
+                        <span class="pt">Linguagens de programação mais usadas por mim com valor de conhecimento.</span>
+                        <span class="en">My most used programming languages with skill rating.</span>
+                        <span class="hk">FernandoPinto.showProgrammingLanguages()</span>
+                    </p> 
                 </div>
-                <div class="pt">
-                    <h1>Esta página não esta a ser mais actualizada aqui</h1>
-                    <p>Devido à necessidade de funcionalidades mais complexas, esta pagina passará a ser desenvolvida <a href="http://fernandopinto.zz.mu/">aqui</a>. Actualizações futuras serão aplicadas somente lá.</p>
-                </div>
-                <div class="hk">
-                    <h1>Backend added !</h1>
-                    <p>I'm learning php, which github io doenst support, for that reason, I moved my website to <a href="http://fernandopinto.zz.mu/">here</a>.</p>
-                </div>
-                <div id="Soundanoid">
-                    <h1>Soundanoid</h1>
-            
-                    <p class="en">Soundanoid it's a game made in java, it's just like Arkanoid but with different sounds, the main idea it's to create an interesting beat while playing the game. Project still not finished and a little buggy. The repository can be found at <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</p>
-            
-                    <p class="pt">Soundanoid é um jogo feito em java. O jogo é igual ao Arkanoid, mas com uma vertente adicional de som. Cada vez que a bola acerta em algum obstaculo faz um som, o som esta relacionado ao objecto a qual a bola acerta. Este projecto ainda não está acabado e ainda se encontra com alguns erros. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</p>
+            </div>
+                <div id="Soundanoid" class="col-md-10 col-md-offset-1 projectInfo">
+                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('Soundanoid').style.display='none';"><span aria-hidden="true">&times;</span></button>
+                    <h3>Soundanoid <small class="en">my first attempt at a java game</small><small class="pt">a minha primeira tentativa de fazer um jogo em java</small></h3>
+                    <!--Portugues-->
+                    <div class="pt ">Soundanoid é um jogo feito em java. O jogo é igual ao Arkanoid, mas com uma vertente adicional de som. Cada vez que a bola acerta em algum obstaculo faz um som, o som esta relacionado ao objecto a qual a bola acerta. Este projecto ainda não está acabado e ainda se encontra com alguns erros. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</div>
+                    
+                    <!--Ingles-->
+                    <div class="en">Soundanoid it's a game made in java, it's just like Arkanoid but with different sounds, the main idea it's to create an interesting beat while playing the game. Project still not finished and a little buggy. The repository can be found at <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</div>
 
-                    <p>
 
-                        <ul class="hk">
+                    <!--Hacker-->
+                    <div class="hk">
+                        <ul >
                              <li>Name : Soundanoid</li>
                              <li>Language : Java</li>
                              <li>Category : Game</li>
-                             <li>Stage of the App : Buggy</li>
+                             <li>Stage of the App : Very Buggy</li>
                              <li>Repository : <a href="https://github.com/FernandoPinto/Soundanoid" target="_new">github</a></li>
                         </ul>  
-                    </p>
-                </div>
-                
-                <div id="Jwallet">
-                    <h1>JWallet</h1>
-            
-                    <p class="en">JWallet it's a Java application that I made in my spare time.
-                    This application simulates a virtual wallet, after you create it you can deposit and withdraw money and also check the log of transitions. This app it's located in <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</p>
-            
-                    <p class="pt">JWaller é uma aplicação feita no meu tempo livre. A linguagem utilizada foi o java. A objectivo da aplicação é simular uma carteira virtual, podendo o utilizador criar uma carteira, adicionar ou retirar dinheiro e verificar o histórico de transações. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</p>
+                    </div>
 
-                    <p>
-                        <ul class="hk">
+                </div>
+
+                <div id="Jwallet" class="col-md-10 col-md-offset-1 projectInfo">
+                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('Jwallet').style.display='none';"><span aria-hidden="true">&times;</span></button>
+                    <h3>JWallet <small>manage your virtual wallet</small></h3>
+                    <br>
+                    <!--Portugues-->
+                    <div class="pt">JWaller é uma aplicação feita no meu tempo livre. A linguagem utilizada foi o java. A objectivo da aplicação é simular uma carteira virtual, podendo o utilizador criar uma carteira, adicionar ou retirar dinheiro e verificar o histórico de transações. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</div>
+                    
+                    <!--Ingles-->
+                    <div class="en">JWallet it's a Java application that I made in my spare time.
+                    This application simulates a virtual wallet, after you create it you can deposit and withdraw money and also check the log of transitions. This app it's located in <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</div>
+
+                    <!--Hacker-->
+                    <div class="hk">
+                        <ul>
                              <li>Name : JWallet</li>
                              <li>Language : Java</li>
                              <li>Category : Economic Management</li>
                              <li>Stage of the App : Finished but still lacks some features</li>
                              <li>Repository : <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a></li>
                         </ul>  
-                    </p>
+                    </div>
+                </div>
+
+                <div id="infoPorto" class="col-md-10 col-md-offset-1 projectInfo">
+                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('infoPorto').style.display='none';"><span aria-hidden="true">&times;</span></button>
+                    <h3>+InfoPorto <small>Summer of Code project</small></h3>
+                    
+                    <!--Portugues-->
+                    <div class="pt">O +InfoPorto foi um projecto trabalhado no <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a>, ficando em 2o lugar no final.</div>
+                    
+                    <!--Ingles-->                    
+                    <div class="en">+InfoPorto was a project worked by a team of 4 young developers, our project was 2nd place in <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a>.</div>
+
+                    <!--Hacker-->
+                    <div class="hk">
+                        <ul>
+                             <li>Name : +InfoPorto</li>
+                             <li>Language : HTML, CSS, SQL and PHP</li>
+                             <li>Category : Turism App</li>
+                             <li>Stage of the App : Discontinued due to lack of time of the team</li>
+                             <li>Link of the Event : <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a></li>
+                        </ul>  
+                    </div>
                 </div>
 
         </div>
 
         <div class="toggleSwitch"> 
             <img id="ptImg" src="resources/pt.png" style="width: 20px; height: 20px;" onclick="switchLanguage(1);"></img>
-            <img id="enImg" src="resources/en.png" style="width: 20px; height: 20px;" onclick="switchLanguage(3);"></img>
-            <img id="hkImg" src="resources/bin.png" style="width: 20px; height: 20px;" onclick="switchLanguage(2);"></img>
+            <img id="enImg" src="resources/en.png" style="width: 20px; height: 20px;" onclick="switchLanguage(2);"></img>
+            <img id="hkImg" src="resources/bin.png" style="width: 20px; height: 20px;" onclick="switchLanguage(3);"></img>
         </div>
 
-
         <div id="construction">
-            <p>Under Construction !</p>
+            Under Construction !
         </div>
     </body>
 </html>
+

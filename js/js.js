@@ -2,85 +2,101 @@
 
 
 function switchLanguage(language){
-        
-    if (language == 1){
-        document.getElementById("skillsList").style.display = "list-item";
-        document.getElementById("projectsList").style.display = "list-item";
-        document.getElementById("contactsList").style.display = "list-item";
-        document.getElementById("skillsClosed").style.display = "none";
-        document.getElementById("projectsClosed").style.display = "none";
-        document.getElementById("contactsClosed").style.display = "none";
-        
-        var en = document.getElementsByClassName("en");
-            for(var i = 0; i < en.length; i++){
-                 en[i].style.display = "none"; 
-        }
-        document.getElementById("enImg").style.border = "0";
-        
-        var pt = document.getElementsByClassName("pt");
-            for(var i = 0; i < pt.length; i++){
-                pt[i].style.display = "inline"; 
-        }
-        document.getElementById("ptImg").style.border = "2px solid white";
+        //Mudanca de linguagem
+        //1- PT 
+        //2- EN 
+        //3- HK
 
-        var hk = document.getElementsByClassName("hk");
-            for(var i = 0; i < hk.length; i++){
-                hk[i].style.display = "none";  
+    var skillsList = document.getElementById("skillsList");
+    var projectsList = document.getElementById("projectsList");
+    var contactsList = document.getElementById("contactsList");
+    var skillsClosed = document.getElementById("skillsClosed");
+    var projectsClosed = document.getElementById("projectsClosed");
+    var contactsClosed = document.getElementById("contactsClosed");
+    var pt = document.getElementsByClassName("pt");
+    var en = document.getElementsByClassName("en");
+    var hk = document.getElementsByClassName("hk");
+
+    if (language == 1){
+        //Portugues
+        skillsList.style.display = "list-item";
+        projectsList.style.display = "list-item";
+        contactsList.style.display = "list-item";
+        skillsClosed.style.display = "none";
+        projectsClosed.style.display = "none";
+        contactsClosed.style.display = "none";
+        
+
+        for(var i = 0; i < pt.length; i++){
+            pt[i].style.display = "inline"; 
         }
+        
+        for(var i = 0; i < en.length; i++){
+            en[i].style.display = "none"; 
+        }
+
+        for(var i = 0; i < hk.length; i++){
+            hk[i].style.display = "none";  
+        }
+
+        document.getElementById("ptImg").style.border = "2px solid white";
+        document.getElementById("enImg").style.border = "0";
         document.getElementById("hkImg").style.border = "0";
     }
 
     if (language == 2 ) {
-        var en = document.getElementsByClassName("en");
-            for(var i = 0; i < en.length; i++){
-                en[i].style.display = "none"; 
-        }
-        document.getElementById("enImg").style.border = "0";
+        //Ingles
+        skillsList.style.display = "list-item";
+        projectsList.style.display = "list-item";
+        contactsList.style.display = "list-item";
+        skillsClosed.style.display = "none";
+        projectsClosed.style.display = "none";
+        contactsClosed.style.display = "none";
 
-        var pt = document.getElementsByClassName("pt");
-            for(var i = 0; i < pt.length; i++){
-                pt[i].style.display = "none"; 
+
+        for(var i = 0; i < pt.length; i++){
+            pt[i].style.display = "none"; 
         }
+
+        for(var i = 0; i < en.length; i++){
+            en[i].style.display = "inline"; 
+        }
+
+        for(var i = 0; i < hk.length; i++){
+            hk[i].style.display = "none";  
+        }
+
         document.getElementById("ptImg").style.border = "0";
-
-        var hk = document.getElementsByClassName("hk");
-            for(var i = 0; i < hk.length; i++){
-                hk[i].style.display = "inline";  
-        }
-        document.getElementById("hkImg").style.border = "2px solid white";
+        document.getElementById("enImg").style.border = "2px solid white";
+        document.getElementById("hkImg").style.border = "0";
     };
 
     if (language == 3 ) {
-        document.getElementById("skillsList").style.display = "list-item";
-        document.getElementById("projectsList").style.display = "list-item";
-        document.getElementById("contactsList").style.display = "list-item";
-        document.getElementById("skillsClosed").style.display = "none";
-        document.getElementById("projectsClosed").style.display = "none";
-        document.getElementById("contactsClosed").style.display = "none";
-
-        var en = document.getElementsByClassName("en");
-            for(var i = 0; i < en.length; i++){
-                en[i].style.display = "inline"; 
+        //Hacker
+        for(var i = 0; i < pt.length; i++){
+            pt[i].style.display = "none"; 
         }
-        document.getElementById("enImg").style.border = "2px solid white";
 
-        var pt = document.getElementsByClassName("pt");
-            for(var i = 0; i < pt.length; i++){
-                pt[i].style.display = "none"; 
+        for(var i = 0; i < en.length; i++){
+            en[i].style.display = "none"; 
         }
+
+        for(var i = 0; i < hk.length; i++){
+            hk[i].style.display = "inline";  
+        }
+
         document.getElementById("ptImg").style.border = "0";
-
-        var hk = document.getElementsByClassName("hk");
-            for(var i = 0; i < hk.length; i++){
-                hk[i].style.display = "none";  
-        }
-        document.getElementById("hkImg").style.border = "0";
+        document.getElementById("enImg").style.border = "0";
+        document.getElementById("hkImg").style.border = "2px solid white";
     };
+
+    
 }
 
 
-function switchState(state){
-    if (state == 1 ){
+function openBrackets(state){
+    
+    if(state==1){
         list = document.getElementById("skillsList");
         close = document.getElementById("skillsClosed");
         if(list.style.display == "list-item"){
@@ -92,7 +108,7 @@ function switchState(state){
         }
     }
 
-    if(state == 2){
+    if(state==2){
         list = document.getElementById("projectsList");
         close = document.getElementById("projectsClosed");
         if(list.style.display == "list-item"){
@@ -104,7 +120,7 @@ function switchState(state){
         }
     }
 
-    if(state == 3){
+    if(state==3){
         list = document.getElementById("contactsList");
         close = document.getElementById("contactsClosed");
         if(list.style.display == "list-item"){
@@ -117,12 +133,12 @@ function switchState(state){
     }
 }
 
-function switchActiveProject(project){
-    var p = document.getElementById(project);
-    if(p.style.display == "none"){
-        p.style.display = "inline";
-    } else {
-        p.style.display = "none";
-    }
-}
+//function switchActiveProject(project){
+//    var p = document.getElementById(project);
+//    if(p.style.display == "none"){
+//        p.style.display = "inline";
+//    } else {
+//        p.style.display = "none";
+//    }
+//}
 
