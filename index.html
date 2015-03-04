@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="styles/graphStyle.css" type="text/css">
         <script type="text/javascript" src="js/js.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <!--
         <script type="text/javascript" src="js/jq.js"></script>
+        -->
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -21,12 +23,12 @@
                 <img src="resources/face.bmp" id="face">
                 <br>
                 <h3 id="name">
-                    Fernando Pinto
-                    <br><br>
+                    <div class="link" onclick="switchActiveProject('bioPanel')">Fernando Pinto</div>
+                    
                     <small>
-                        <span class="pt">Engenheiro Informático</span>
-                        <span class="en">Computer Engineer</span>
-                        <span class="hk">Computer Slave</span>
+                        <small class="pt">Engenheiro Informático</small>
+                        <small class="en">Computer Engineer</small>
+                        <small class="hk">Computer Slave</small>
                     </small>
                 </h3>
             </div>
@@ -53,9 +55,9 @@
                     <p class="pt">Projectos</p>      
                 </h2>
                 <ul id="projectsList">
-                        <li class="link">+InfoPorto (@PortoSummerOfCode)</li>
-                        <li class="link">Soundanoid</li>
-                        <li class="link">JWallet</li>
+                        <li class="link" onclick="switchActiveProject('InfoPorto')">+InfoPorto (@PortoSummerOfCode)</li>
+                        <li class="link" onclick="switchActiveProject('Soundanoid')">Soundanoid</li>
+                        <li class="link" onclick="switchActiveProject('Jwallet')">JWallet</li>
                 </ul> 
                 <p id="projectsClosed">...</p>
                 <h2><p class="hk">}</p></h2> 
@@ -83,6 +85,16 @@
                 <div class="en">
                     <h3>More about me</h3>
                     <div>I study computer engineer at ISEP (Superior Engineering Institute of Porto) and I love to program. My programming journey started in college learning Java in 2012, but I always wanted to do something that interacts with computers. I also learned C, C++ and Assembly in college and I'm currently learning good practices of programming and different software development frameworks like Scrum. I'm also learning Computer Networks, Compilers and Operating Systems. In Setember 2014 I participated in a programming competition with 3 friends, called Porto Summer of Code, in which my team finished in 2nd, you can see more about that project in the Projects section of the website.</div>
+                </div>
+                <div class="hk">
+                        <h3>About me</h3>
+                        <ul >
+                             <li>Languages: Portuguese, English and a little bit of german</li>
+                             <li>Hobbies: Programming and playing pc games</li>
+                             <li>Age when started programming: 19, but I always wanted to interact with a computer and had already used a little bit of html when I was younger, even tough at the time I didn't understood it very much.</li>
+                             <li>Past jobs: I worked as a server in my dad's restaurant a couple of  summers and I'm currently on university (computer engineer).</li>
+                             <li>Personal Skills: easily motivated, willingness to learn new things, friendly</li>
+                        </ul>  
                 </div>
                 <div class="bargraph" style= "width: 380px;">
                     <ul class="bars">
@@ -119,15 +131,14 @@
                             <span class="hk" style="margin-left:-10px;">Amateur</span>
                         </li>
                     </ul>
-                    <p class="centered">
+                    <small class="centered">
                         <span class="pt">Linguagens de programação mais usadas por mim com valor de conhecimento.</span>
                         <span class="en">My most used programming languages with skill rating.</span>
                         <span class="hk">FernandoPinto.showProgrammingLanguages()</span>
-                    </p> 
+                    </small> 
                 </div>
             </div>
                 <div id="Soundanoid" class="col-md-10 col-md-offset-1 projectInfo">
-                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('Soundanoid').style.display='none';"><span aria-hidden="true">&times;</span></button>
                     <h3>Soundanoid <small class="en">my first attempt at a java game</small><small class="pt">a minha primeira tentativa de fazer um jogo em java</small></h3>
                     <!--Portugues-->
                     <div class="pt ">Soundanoid é um jogo feito em java. O jogo é igual ao Arkanoid, mas com uma vertente adicional de som. Cada vez que a bola acerta em algum obstaculo faz um som, o som esta relacionado ao objecto a qual a bola acerta. Este projecto ainda não está acabado e ainda se encontra com alguns erros. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</div>
@@ -150,8 +161,13 @@
                 </div>
 
                 <div id="Jwallet" class="col-md-10 col-md-offset-1 projectInfo">
-                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('Jwallet').style.display='none';"><span aria-hidden="true">&times;</span></button>
-                    <h3>JWallet <small>manage your virtual wallet</small></h3>
+                    <h3>
+                        JWallet 
+                        <small>
+                            <div class="pt">a sua carteira virtual</div>
+                            <div class="en">manage your virtual wallet</div>
+                        </small>
+                    </h3>
                     <br>
                     <!--Portugues-->
                     <div class="pt">JWaller é uma aplicação feita no meu tempo livre. A linguagem utilizada foi o java. A objectivo da aplicação é simular uma carteira virtual, podendo o utilizador criar uma carteira, adicionar ou retirar dinheiro e verificar o histórico de transações. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</div>
@@ -172,9 +188,14 @@
                     </div>
                 </div>
 
-                <div id="infoPorto" class="col-md-10 col-md-offset-1 projectInfo">
-                    <button type="button" class="close" aria-label="Close" onclick="document.getElementById('infoPorto').style.display='none';"><span aria-hidden="true">&times;</span></button>
-                    <h3>+InfoPorto <small>Summer of Code project</small></h3>
+                <div id="InfoPorto" class="col-md-10 col-md-offset-1 projectInfo">
+                    <h3>
+                        +InfoPorto 
+                        <small>
+                            <div class="pt">projecto do Porto Summer of Code</div>
+                            <div class="en">Porto Summer of Code project</div>
+                        </small>
+                    </h3>
                     
                     <!--Portugues-->
                     <div class="pt">O +InfoPorto foi um projecto trabalhado no <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a>, ficando em 2o lugar no final.</div>

@@ -133,12 +133,16 @@ function openBrackets(state){
     }
 }
 
-//function switchActiveProject(project){
-//    var p = document.getElementById(project);
-//    if(p.style.display == "none"){
-//        p.style.display = "inline";
-//    } else {
-//        p.style.display = "none";
-//    }
-//}
+function switchActiveProject(projectID){
+    var projectList = document.getElementsByClassName("projectInfo");
+    for(var i=0; i < projectList.length; i++){
+        projectList[i].style.display = "none";
+    }
+
+    var bio = document.getElementById("bioPanel");
+    bio.style.display = "none";
+
+    var project = document.getElementById(projectID);
+    project.style.display = "inline";
+}
 
