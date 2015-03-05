@@ -65,11 +65,8 @@ p {
 }
 
 .projectInfo {
-	border: 2px solid gray;
-	border-radius: 5px;
 	padding: 10px;
 	margin-bottom: 10px;
-	box-shadow: 10px 10px 20px #eee;
 }
 
 .projectInfo h1 {
