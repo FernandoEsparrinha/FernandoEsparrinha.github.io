@@ -1,239 +1,263 @@
 <html>
-    <head>
-        <title>Fernando Pinto</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/mainStyle.css" type="text/css">
-        <link rel="stylesheet" href="styles/graphStyle.css" type="text/css">
-        <script type="text/javascript" src="js/js.js"></script>
-        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <!--
-        <script type="text/javascript" src="js/jq.js"></script>
-        -->
+<head>
+	<title>Fernando Pinto | Programmer</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    </head>
+	<!-- GOOGLE FONT -->
+	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
 
-    <body>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-        <div id="personal" class="col-md-3 caixa">
-            <div>
-                <img src="resources/face.bmp" id="face">
-                <br>
-                <h3 id="name">
-                    <div class="link" onclick="switchActiveProject('bioPanel')">Fernando Pinto</div>
-                    
-                    <small>
-                        <small class="pt">Engenheiro Informático</small>
-                        <small class="en">Computer Engineer</small>
-                        <small class="hk">Computer Slave</small>
-                    </small>
-                </h3>
-            </div>
-            <div id="skills">
-                <h2>
-                    <p class="hk" onclick="openBrackets(1);">.showSkills(){</p>
-                    <p class="en">Skills</p>
-                    <p class="pt">Aptidões</p>
-                </h2>
-                <ul id="skillsList">
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Asm</li>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                </ul>
-                <p id="skillsClosed">...</p>  
-                <h2><p class="hk">}</p></h2> 
-                <h2>
-                    <p class="hk" onclick="openBrackets(2);">.showProjects(){</p>
-                    <p class="en">Projects</p>  
-                    <p class="pt">Projectos</p>      
-                </h2>
-                <ul id="projectsList">
-                        <li class="link" onclick="switchActiveProject('InfoPorto')">+InfoPorto (@PortoSummerOfCode)</li>
-                        <li class="link" onclick="switchActiveProject('Soundanoid')">Soundanoid</li>
-                        <li class="link" onclick="switchActiveProject('Jwallet')">JWallet</li>
-                </ul> 
-                <p id="projectsClosed">...</p>
-                <h2><p class="hk">}</p></h2> 
-                <h2>
-                    <p class="hk" onclick="openBrackets(3);">.contact(){</p>
-                    <p class="en">Contacts</p>
-                    <p class="pt">Contactos</p>        
-                </h2>
-                <ul id="contactsList">
-                        <li><a href="https://pt.linkedin.com/pub/fernando-pinto/94/16b/903/" target='_new'>LinkedIn</a></li>
-                        <li><a href="https://github.com/FernandoPinto" target='_new'>GitHub</a></li>
-                        <li><a href="https://bitbucket.org/FernandoPinto" target='_new'>BitBucket</a></li>
-                </ul>  
-                <p id="contactsClosed">...</p>
-                <h2><p class="hk">}</p></h2>    
-            </div>
-        </div>
-        <div id="main" class="col-md-8 col-md-offset-1 caixa">
-            <!--Biography panel-->
-            <div id="bioPanel">
-                <div class="pt">
-                    <h3>Mais sobre mim</h3>
-                    <div>De momento estou a frequentar o curso de Engenharia Informática do ISEP (Instituto Superior de Engenharia do Porto) e adoro programar. A minha jornada de programação comecou na faculdade, onde aprendi Java em 2012, mas sempre quis fazer algo que oferecesse interação com o computador. Também aprendi C, C++ e Assembly na faculdade e de momento estou a aprender boas práticas da programação e diferentes metodos de desenvolvimento de software, como o Scrum. Estou também a aprender Redes de Computadores, Sistemas de Computadores e Linguagens da Programação (Compiladores). Em Setembro de 2014 participei numa competição de programação com 3 amigos meus, chamada Porto Summer of Code, na qual a minha equipa ficou em segundo lugar. Mais informações sobre este projecto podem ser vistas na secção dos projectos.</div>
-                </div>
-                <div class="en">
-                    <h3>More about me</h3>
-                    <div>I study computer engineer at ISEP (Superior Engineering Institute of Porto) and I love to program. My programming journey started in college learning Java in 2012, but I always wanted to do something that interacts with computers. I also learned C, C++ and Assembly in college and I'm currently learning good practices of programming and different software development frameworks like Scrum. I'm also learning Computer Networks, Compilers and Operating Systems. In Setember 2014 I participated in a programming competition with 3 friends, called Porto Summer of Code, in which my team finished in 2nd, you can see more about that project in the Projects section of the website.</div>
-                </div>
-                <div class="hk">
-                        <h3>About me</h3>
-                        <ul >
-                             <li>Languages: Portuguese, English and a little bit of german</li>
-                             <li>Hobbies: Programming and playing pc games</li>
-                             <li>Age when started programming: 19, but I always wanted to interact with a computer and had already used a little bit of html when I was younger, even tough at the time I didn't understood it very much.</li>
-                             <li>Past jobs: I worked as a server in my dad's restaurant a couple of  summers and I'm currently on university (computer engineer).</li>
-                             <li>Personal Skills: easily motivated, willingness to learn new things, friendly</li>
-                        </ul>  
-                </div>
-                <div class="bargraph" style= "width: 380px;">
-                    <ul class="bars">
-                        <div class="colorfilter" style="width: 365px;"></div>
-                        <li class="bar1 redbar" style="height: 144px;">8<span><img src="resources/java.png" style="width:25px; height:40px;"></span></li>
-                        <li class="bar2 goldbar" style="height: 90px;">5<span><img src="resources/c++.png" style="width:35px; height:35px; left:-3px;"></span></li>
-                        <li class="bar3 greenbar" style="height: 108px;">6<span><img src="resources/c.png" style="width:35px; height:35px; left:-3px;"></span></li> 
-                        <li class="bar4 yellowbar" style="height: 144px;">8<span><img src="resources/html.png" style="width:30px; height:30px; left:-1px;"></span></li>
-                        <li class="bar5 purplebar" style="height: 90px;">5<span><img src="resources/asm.png" style="width:45px; height:25px; left:-8px;"></span></li>
-                    </ul>
-                    <ul class="label">
-                        <li>Java</li>
-                        <li>C++</li>
-                        <li>C</li>
-                        <li>Web</li>
-                        <li>Assembly</li>
-                    </ul>
-                    <ul class="y-axis">
-                        <li>
-                            <span class="pt">Alto</span>
-                            <span class="en">High</span>
-                            <span class="hk">Pro</span>
-                        </li>
-                        <li></li>
-                        <li>
-                            <span class="pt">Medio</span>
-                            <span class="en">Medium</span>
-                            <span class="hk" style="margin-left:-15px;">Semi-pro</span>
-                        </li>
-                        <li></li>
-                        <li>
-                            <span class="pt">Fraco</span>
-                            <span class="en">Poor</span>
-                            <span class="hk" style="margin-left:-10px;">Amateur</span>
-                        </li>
-                    </ul>
-                    <small class="centered">
-                        <span class="pt">Linguagens de programação mais usadas por mim com valor de conhecimento.</span>
-                        <span class="en">My most used programming languages with skill rating.</span>
-                        <span class="hk">FernandoPinto.showProgrammingLanguages()</span>
-                    </small> 
-                </div>
-            </div>
-                <div id="Soundanoid" class="col-md-10 col-md-offset-1 projectInfo">
-                    <h3>Soundanoid <small class="en">my first attempt at a java game</small><small class="pt">a minha primeira tentativa de fazer um jogo em java</small></h3>
-                    <!--Portugues-->
-                    <div class="pt ">Soundanoid é um jogo feito em java. O jogo é igual ao Arkanoid, mas com uma vertente adicional de som. Cada vez que a bola acerta em algum obstaculo faz um som, o som esta relacionado ao objecto a qual a bola acerta. Este projecto ainda não está acabado e ainda se encontra com alguns erros. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</div>
-                    
-                    <!--Ingles-->
-                    <div class="en">Soundanoid it's a game made in java, it's just like Arkanoid but with different sounds, the main idea it's to create an interesting beat while playing the game. Project still not finished and a little buggy. The repository can be found at <a href="https://github.com/FernandoPinto/Soundanoid" target="_new"> github</a>.</div>
+	<!--JQUERY-->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	
+	<!--ANGULAR JS-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+	<!--JAVASCRIPT-->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!--BOOTSTRAP-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="personalApp">
+	<!--PERSONAL AREA-->
+	<div class="col-xs-12 col-md-3 main" id="personalArea" ng-controller="MainController">
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger" id="homeButton"><span class="glyphicon glyphicon-home"></span></button>
+		</div>
+		<br>
+		<br>
+		<img src="resources/photo.jpg" class="img-circle imageProfileSize">
+		<h4> {{ name }} <br> <small>{{ title }}</small></h4>
+		<br>
+
+		<div class="styledList">
+			<ul>
+				<li>Born in 1993</li>
+				<li>Portuguese</li>
+				<li>Funny and Creative</li>
+				<li>Love to Program and play video games</li>
+			</ul>
+		</div>
+
+		<!--
+		<h4><a onclick="activateProjects()">Projects</a></h4>
+		<div class="styledList">
+			<ul>
+				<li ng-repeat="project in projects">{{ project.name }}</li>
+			</ul>
+		</div>
+		-->
+		<br>
+		<div id="contactsPanel" class="row">
+			<div class="col-md-12">
+				<h4>Contacts</h4>
+			</div>
+			<div ng-repeat="contact in contacts" class="col-xs-3 col-md-3">
+				<a href="{{contact.link}}" title="{{contact.name}}" target="_blank" >
+					<img src="{{contact.icon}}" >
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!--SKILLS AREA-->
+	<div class="col-xs-12 col-md-8 main" id="skillsArea">
 
 
-                    <!--Hacker-->
-                    <div class="hk">
-                        <ul >
-                             <li>Name : Soundanoid</li>
-                             <li>Language : Java</li>
-                             <li>Category : Game</li>
-                             <li>Stage of the App : Very Buggy</li>
-                             <li>Repository : <a href="https://github.com/FernandoPinto/Soundanoid" target="_new">github</a></li>
-                        </ul>  
-                    </div>
+		<!--MAIN VIEW -->
+		<div class="row" id="mainView">
+			<div class="col-xs-12 col-sm-4 col-md-4 skill">
+				<h4>Education</h4>
+				<img src="resources/education.png" id="educationImage">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 skill">
+				<h4>Personal</h4>
+				<img src="resources/personal.png" id="personalImage">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 skill">
+				<h4>Skills</h4>
+				<img src="resources/programming.png" id="professionalAreaImage">
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="col-md-12 skill">
+				<h4>Projects</h4>
+				<img src="resources/project.png" id="projectsImage">
+			</div>
+			<div id="hobbiesPanel">
+				<h3 class="hidden-xs">Hobbies</h3>
+					<div class="hidden-xs col-sm-4 col-md-4 skill">
+						<img src="resources/BikeLogo.png" alt="Cycling" class="" id="cyclingImage">
+					</div>
+					
+					<div class="hidden-xs col-sm-4 col-md-4 skill">
+						<img src="resources/GamingLogo.png" alt="Gaming" class="" id="gamingImage">
+					</div>
+					
+					<div class="hidden-xs col-sm-4 col-md-4 skill">
+						<img src="resources/MusicLogo.png" alt="Music" class="" id="musicImage">
+					</div>
+			</div>
+		</div>
 
-                </div>
+		<!--EDUCATION VIEW-->
+		<div class="row" id="educationView">
+			<h1>Education</h1>
+			<span class="glyphicon glyphicon-education"></span>
+			<br>
+			<br>
+			<span>I always studied in Porto, on the 10 year I frequented the Science and Technology course. Right now I am studying computer engineer at <acronym title="Superior Institute of Engineering of Porto">ISEP</acronym> (More Info Below). I started learning Java in 2012 but I was always very curious with everything that was computer related. Also in that year I started learning HTML, CSS and Javascript on my own. After that I learned Assembly, C and C++ in university. I always try to learn something new when Im not on classes. You can see a full description of my skills <a onclick="activateProfessionalArea();">here</a>.</span>
+			<br>
+			<br>
+		</div>
 
-                <div id="Jwallet" class="col-md-10 col-md-offset-1 projectInfo">
-                    <h3>
-                        JWallet 
-                        <small>
-                            <div class="pt">a sua carteira virtual</div>
-                            <div class="en">manage your virtual wallet</div>
-                        </small>
-                    </h3>
-                    <br>
-                    <!--Portugues-->
-                    <div class="pt">JWallet é uma aplicação feita no meu tempo livre. A linguagem utilizada foi o java. A objectivo da aplicação é simular uma carteira virtual, podendo o utilizador criar uma carteira, adicionar ou retirar dinheiro e verificar o histórico de transações. O repositório pode ser encontrado no <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</div>
-                    
-                    <!--Ingles-->
-                    <div class="en">JWallet it's a Java application that I made in my spare time.
-                    This application simulates a virtual wallet, after you create it you can deposit and withdraw money and also check the log of transitions. This app it's located in <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a>.</div>
+		<!-- PROJECT VIEW-->
+		<div class="row" id="projectView" ng-controller="MainController">
+			<h1>Projects</h1>
+			<br>
+			<br>
+			<div ng-repeat="project in projects | orderBy: '-language'">
+				<project id="project"></project>
+			</div>
+		</div>
 
-                    <!--Hacker-->
-                    <div class="hk">
-                        <ul>
-                             <li>Name : JWallet</li>
-                             <li>Language : Java</li>
-                             <li>Category : Economic Management</li>
-                             <li>Stage of the App : Finished but still lacks some features</li>
-                             <li>Repository : <a href="https://github.com/FernandoPinto/JWallet" target="_new">github</a></li>
-                        </ul>  
-                    </div>
-                </div>
+		<!-- PERSONAL VIEW-->
+		<div class="row" id="personalView">
+			<h1>Personal</h1>
+			<br>
+			<br>
+			<div class="col-md-6" style="text-align: left">
+				My passion with computers developed with an early age, ever since my first experience with a computer I wondered how the different applications, websites and games were built. I started programming HTML with the Hi5 social platform (Hi5 let you customize your profile with HTML and CSS) and I didn't even knew what it was. Later when I started to learn Java my passion with programming grew even more, and I started learning another languages on my own, in sites such as Codecademy, or by watching Youtube tutorials. As I started to understand how computers and computer programs work, I started to develop a interest in hacking, I thinks its very interesting how people find security holes in the most secure programs. I have always the need to do other projects aside from university work, but don't have much time as I have to study. I later noticed that all my projects were coming out ugly, so I started studying Design on my own and developed a passion for it, I believe that aside from a program being pratical, it has to have a nice interface that the user can understand easily.
+			</div>
 
-                <div id="InfoPorto" class="col-md-10 col-md-offset-1 projectInfo">
-                    <h3>
-                        +InfoPorto 
-                        <small>
-                            <div class="pt">projecto do Porto Summer of Code</div>
-                            <div class="en">Porto Summer of Code project</div>
-                        </small>
-                    </h3>
-                    
-                    <!--Portugues-->
-                    <div class="pt">
-                        <img src="resources/psoc.jpg" style="width:512px; height: 342px; margin-left: 10px; float:right;" class="img-responsive">
-                        O +InfoPorto foi um projecto trabalhado no <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a>, uma competição de programação onde varios grupos tinham o objectivo de criar um programa dentro do tema "Porto, a cidade do futuro". O meu grupo criou o +InfoPorto, uma aplicação de turismo para a cidade do Porto, códigos QR iriam ser espalhados pela cidade em pontos turisticos como monumentos e restaurantes. O utilizador, com a nossa aplicação, iria ler os códigos QR, que iriam mostrar informações importantes tal como a data de construção, arquitecto e curiosidades no caso de monumentos ou menus e promoções no caso de restaurantes. No final, a nossa aplicação ficou em 2º lugar.
-                    </div>
+			<div class="col-md-5 col-md-offset-1">
+				<div class="styledList">
+				   <ul>
+				      <li>2012</li>
+				         <ol>
+				            <li>- Entered in University</li>
+				            <li>- Learned Java</li>
+				            <li>- Learned web programming</li>
+				         </ol>
+				      <li>2014</li>
+				         <ol>
+				            <li>- Learned C and C++</li>
+				            <li>- Developed JWallet</li>
+				            <li>- Developed Soundanoid</li>
+				            <li>- Started developing Republic of Developers</li>
+				            <li>- Participated in Porto Summer of Code with the app +infoPorto, placed in 2nd.</li>
+				         </ol>
+				      <li>2015</li>
+				         <ol>
+				            <li>- Learned XML</li>
+				            <li>- Learned Programming Patterns</li>
+				            <li>- Learned Compilers</li>
+				            <li>- Learned Computer Networks</li>
+				            <li>- Improved working with a team (Due to a class project in University)</li>
+				         </ol>
+				   </ul>
+				</div>
+			</div>
 
-                    
-                    <!--Ingles-->                    
-                    <div class="en">
-                        <img src="resources/psoc.jpg" style="width:512px; height: 342px; margin-right: 10px; float:left;" class="img-responsive">
-                        +InfoPorto was a project worked by a team of 4 young developers, our project was 2nd place in <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a>, a hackaton with the theme "Porto, the city of future". In our application, QR codes are placed in atraction points of the city, like monuments or restaurants. The user, with our application, would read the QR codes and get important informations like name of arquitect and year of construction in case of the monument or menus and promotions in case of restaurants.
-                        
-                    </div>
+		</div>
 
-                    <!--Hacker-->
-                    <div class="hk">
-                        <ul>
-                             <li>Name : +InfoPorto</li>
-                             <li>Language : HTML, CSS, SQL and PHP</li>
-                             <li>Category : Turism App</li>
-                             <li>Stage of the App : Discontinued due to lack of time of the team</li>
-                             <li>Link of the Event : <a href="https://www.facebook.com/portosummerofcode" target="_new">Porto Summer of Code</a> - 2nd Place</li>
-                        </ul>  
-                    </div>
-                </div>
+		<!-- PROFESSIONAL AREA-->
+		<div class="row" id="professionalAreaView" ng-controller="SkillController">
+			<h1>Professional Area</h1>
+			<span class="glyphicon glyphicon-console"></span>
+			
+			<br>
+			<br>
+			
+			<span>My skills are mostly focused on Programming and Computers altough I am always open to learn new things. I also have some small personal projects that I work on my own or with some friends in my free time, you can find a list of those projects <a onclick="activateProjects();">here</a></span>
+			
+			<br>
+			<br>
 
-        </div>
+			<div  ng-repeat="skill in skills | orderBy: '-level'">
+				<skill id="skill"></skill>
+			</div>
+				
+		</div>
 
-        <div class="toggleSwitch"> 
-            <img id="ptImg" src="resources/pt.png" style="width: 20px; height: 20px;" onclick="switchLanguage(1);"></img>
-            <img id="enImg" src="resources/en.png" style="width: 20px; height: 20px;" onclick="switchLanguage(2);"></img>
-            <img id="hkImg" src="resources/bin.png" style="width: 20px; height: 20px;" onclick="switchLanguage(3);"></img>
-        </div>
 
-        <div id="construction">
-            Under Construction !
-        </div>
-    </body>
+		<!--CYCLING AREA-->
+		<div class="row" id="cyclingView">
+			<h1>Cycling</h1>
+			<span>I love to ride my bicycle, altough I don't have this hobbie for a long time (I bought my bicycle on 2015 spring), it didn't pass too much time till I fell in love with it. I tend to go anywhere I can riding bicycle, as it's a sport where at the same time I'm going to a place I'm working out. This makes trips shorter and more enjoyable.
+			</span>
+		</div>
+
+		<!--GAMING AREA-->
+		<div class="row" id="gamingView">
+			<h1>Gaming</h1>
+			<span>One of my biggest hobbies is playing computer games, not only because is fun, but because I always wanted to program a game, and by playing it and watching the behind the scenes videos and interviews with the developers you get to see how much work is envolved in the making of a game. It also develops creativity. I like to take games as a competition, where I have to unlock everything.</span>
+			<br>
+			<br>
+			<a href="http://steamcommunity.com/id/devil777/" target="_blank"><img src="http://steamsignature.com/card/0/76561197996957307.png"/></a>
+
+		</div>
+
+		<!--MUSIC AREA-->
+		<div class="row" id="musicView">
+			<h1>Music</h1>
+			<span>I like to listen and play music, I sometimes pratice guitar on my free time. Music is a huge help when I program because it prevents my brain from freezing, and it helps to keep me motivated. My favorite genre of music is Rock. Some of the bands I like are Royal Blood, Xutos e Pontapes and 3 Doors Down. My favorite band is the Foo Fighters.</span>
+			<br>
+			<br>
+			
+		</div>
+
+	</div>
+
+	<!--SMALL DESCRIPTION FOR MOBILE DEVICES-->
+	<div class="col-xs-12 main" id="miniDescription">
+		<div class="row">
+			<h1>Hello world</h1>
+			<p>
+				Right now you are probably watching this from a mobile device, it's a wonderful thing beign able to navigate the internet with a mobile phone and beign able to 
+				do some work while traveling or relaxing. Below you will be able to read some information about me, but consider coming here again in a desktop, as you will have more information displayed.
+			</p>
+
+			<hr>
+
+			<div class="styledList">
+				<ul>
+					<li>Name - Fernando Esparrinha Pinto</li>
+					<li>Birthdate - 13-01-1993</li>
+					<li>Nacionality - Portuguese</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<p>
+				I love programming and everything that is technology related. I like problems that are hard to solve, and that take a lot of time and headaches. Some of my hobbies are playing videogames and riding bicycle. I started programming in 2012 but I always wanted to create things with a computer, especially videogames.
+			</p>
+
+			
+
+		</div>
+	</div>
+
+
+
+	<!-- MODULES -->
+    <script src="js/app.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="js/Controllers/MainController.js"></script>
+    <script src="js/Controllers/SkillController.js"></script>
+
+    <!-- DIRECTIVES -->
+    <script src="js/directives/project.js"></script>
+    <script src="js/directives/skill.js"></script>
+</body>
 </html>
-
