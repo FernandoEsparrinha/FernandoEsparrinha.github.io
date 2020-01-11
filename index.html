@@ -1,264 +1,42 @@
 <html>
-<head>
-	<title>Fernando Pinto | Programmer</title>
 
-	<!-- GOOGLE FONT -->
-	<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+<head>
+	<title>Fernando Esparrinha</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
 
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<!--JQUERY-->
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	
-	<!--ANGULAR JS-->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-
 	<!--JAVASCRIPT-->
 	<script type="text/javascript" src="js/main.js"></script>
 
-	<!--BOOTSTRAP-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
-<body ng-app="personalApp">
-	<!--PERSONAL AREA-->
-	<div class="col-xs-12 col-md-3 main" id="personalArea" ng-controller="MainController">
-		<div class="btn-group">
-			<button type="button" class="btn btn-danger" id="homeButton"><span class="glyphicon glyphicon-home"></span></button>
-		</div>
-		<br>
-		<br>
-		<img src="resources/photo.jpeg" class="img-circle imageProfileSize">
-		<h4> {{ name }} <br> <small>{{ title }}</small></h4>
-		<br>
 
-		<div class="styledList">
-			<ul>
-				<li>Born in 1993</li>
-				<li>Portuguese</li>
-				<li>Funny and Creative</li>
-				<li>Love to Program and play video games</li>
-				<li><a href="resources/CV-FernandoPinto.pdf" title="Curriculum Vitae" target="_blank">My Curriculum</a></li>
-			</ul>
-		</div>
+<body>
+	<div id="main-container">
 
-		<!--
-		<h4><a onclick="activateProjects()">Projects</a></h4>
-		<div class="styledList">
-			<ul>
-				<li ng-repeat="project in projects">{{ project.name }}</li>
-			</ul>
-		</div>
-		-->
-		<br>
-		<div id="contactsPanel" class="row">
-			<div class="col-md-12">
-				<h4>Contacts</h4>
-			</div>
-			<div ng-repeat="contact in contacts" class="col-xs-3 col-md-3">
-				<a href="{{contact.link}}" title="{{contact.name}}" target="_blank" >
-					<img src="{{contact.icon}}" >
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<!--SKILLS AREA-->
-	<div class="col-xs-12 col-md-8 main" id="skillsArea">
-
-
-		<!--MAIN VIEW -->
-		<div class="row" id="mainView">
-			<div class="col-xs-12 col-sm-4 col-md-4 skill">
-				<h4>Education</h4>
-				<img src="resources/education.png" id="educationImage">
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 skill">
-				<h4>Personal</h4>
-				<img src="resources/personal.png" id="personalImage">
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 skill">
-				<h4>Skills</h4>
-				<img src="resources/programming.png" id="professionalAreaImage">
-			</div>
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="col-md-12 skill">
-				<h4>Projects</h4>
-				<img src="resources/project.png" id="projectsImage">
-			</div>
-			<div id="hobbiesPanel">
-				<h3 class="hidden-xs">Hobbies</h3>
-					<div class="hidden-xs col-sm-4 col-md-4 skill">
-						<img src="resources/BikeLogo.png" alt="Cycling" class="" id="cyclingImage">
-					</div>
-					
-					<div class="hidden-xs col-sm-4 col-md-4 skill">
-						<img src="resources/GamingLogo.png" alt="Gaming" class="" id="gamingImage">
-					</div>
-					
-					<div class="hidden-xs col-sm-4 col-md-4 skill">
-						<img src="resources/MusicLogo.png" alt="Music" class="" id="musicImage">
-					</div>
-			</div>
-		</div>
-
-		<!--EDUCATION VIEW-->
-		<div class="row" id="educationView">
-			<h1>Education</h1>
-			<span class="glyphicon glyphicon-education"></span>
-			<br>
-			<br>
-			<span>I always studied in Porto, on the 10 year I frequented the Science and Technology course. Right now I am studying computer engineer at <acronym title="Superior Institute of Engineering of Porto">ISEP</acronym> (More Info Below). I started learning Java in 2012 but I was always very curious with everything that was computer related. Also in that year I started learning HTML, CSS and Javascript on my own. After that I learned Assembly, C and C++ in university. I always try to learn something new when Im not on classes. You can see a full description of my skills <a onclick="activateProfessionalArea();">here</a>.</span>
-			<br>
-			<br>
-		</div>
-
-		<!-- PROJECT VIEW-->
-		<div class="row" id="projectView" ng-controller="MainController">
-			<h1>Projects</h1>
-			<br>
-			<br>
-			<div ng-repeat="project in projects | orderBy: '-language'">
-				<project id="project"></project>
-			</div>
-		</div>
-
-		<!-- PERSONAL VIEW-->
-		<div class="row" id="personalView">
-			<h1>Personal</h1>
-			<br>
-			<br>
-			<div class="col-md-6" style="text-align: left">
-				My passion with computers developed with an early age, ever since my first experience with a computer I wondered how the different applications, websites and games were built. I started programming HTML with the Hi5 social platform (Hi5 let you customize your profile with HTML and CSS) and I didn't even knew what it was. Later when I started to learn Java my passion with programming grew even more, and I started learning another languages on my own, in sites such as Codecademy, or by watching Youtube tutorials. As I started to understand how computers and computer programs work, I started to develop a interest in hacking, I thinks its very interesting how people find security holes in the most secure programs. I have always the need to do other projects aside from university work, but don't have much time as I have to study. I later noticed that all my projects were coming out ugly, so I started studying Design on my own and developed a passion for it, I believe that aside from a program being pratical, it has to have a nice interface that the user can understand easily.
-			</div>
-
-			<div class="col-md-5 col-md-offset-1">
-				<div class="styledList">
-				   <ul>
-				      <li>2012</li>
-				         <ol>
-				            <li>- Entered in University</li>
-				            <li>- Learned Java</li>
-				            <li>- Learned web programming</li>
-				         </ol>
-				      <li>2014</li>
-				         <ol>
-				            <li>- Learned C and C++</li>
-				            <li>- Developed JWallet</li>
-				            <li>- Developed Soundanoid</li>
-				            <li>- Started developing Republic of Developers</li>
-				            <li>- Participated in Porto Summer of Code with the app +infoPorto, placed in 2nd.</li>
-				         </ol>
-				      <li>2015</li>
-				         <ol>
-				            <li>- Learned XML</li>
-				            <li>- Learned Programming Patterns</li>
-				            <li>- Learned Compilers</li>
-				            <li>- Learned Computer Networks</li>
-				            <li>- Improved working with a team (Due to a class project in University)</li>
-				         </ol>
-				   </ul>
-				</div>
-			</div>
-
-		</div>
-
-		<!-- PROFESSIONAL AREA-->
-		<div class="row" id="professionalAreaView" ng-controller="SkillController">
-			<h1>Professional Area</h1>
-			<span class="glyphicon glyphicon-console"></span>
-			
-			<br>
-			<br>
-			
-			<span>My skills are mostly focused on Programming and Computers altough I am always open to learn new things. I also have some small personal projects that I work on my own or with some friends in my free time, you can find a list of those projects <a onclick="activateProjects();">here</a></span>
-			
-			<br>
-			<br>
-
-			<div  ng-repeat="skill in skills | orderBy: '-level'">
-				<skill id="skill"></skill>
-			</div>
-				
-		</div>
-
-
-		<!--CYCLING AREA-->
-		<div class="row" id="cyclingView">
-			<h1>Cycling</h1>
-			<span>I love to ride my bicycle, altough I don't have this hobbie for a long time (I bought my bicycle on 2015 spring), it didn't pass too much time till I fell in love with it. I tend to go anywhere I can riding bicycle, as it's a sport where at the same time I'm going to a place I'm working out. This makes trips shorter and more enjoyable.
-			</span>
-		</div>
-
-		<!--GAMING AREA-->
-		<div class="row" id="gamingView">
-			<h1>Gaming</h1>
-			<span>One of my biggest hobbies is playing computer games, not only because is fun, but because I always wanted to program a game, and by playing it and watching the behind the scenes videos and interviews with the developers you get to see how much work is envolved in the making of a game. It also develops creativity. I like to take games as a competition, where I have to unlock everything.</span>
-			<br>
-			<br>
-			<a href="http://steamcommunity.com/id/devil777/" target="_blank"><img src="http://steamsignature.com/card/0/76561197996957307.png"/></a>
-
-		</div>
-
-		<!--MUSIC AREA-->
-		<div class="row" id="musicView">
-			<h1>Music</h1>
-			<span>I like to listen and play music, I sometimes pratice guitar on my free time. Music is a huge help when I program because it prevents my brain from freezing, and it helps to keep me motivated. My favorite genre of music is Rock. Some of the bands I like are Royal Blood, Xutos e Pontapes and 3 Doors Down. My favorite band is the Foo Fighters.</span>
-			<br>
-			<br>
-			
-		</div>
-
-	</div>
-
-	<!--SMALL DESCRIPTION FOR MOBILE DEVICES-->
-	<div class="col-xs-12 main" id="miniDescription">
-		<div class="row">
-			<h1>Hello world</h1>
-			<p>
-				Right now you are probably watching this from a mobile device, it's a wonderful thing beign able to navigate the internet with a mobile phone and beign able to 
-				do some work while traveling or relaxing. Below you will be able to read some information about me, but consider coming here again in a desktop, as you will have more information displayed.
-			</p>
-
-			<hr>
-
-			<div class="styledList">
+		<div id="header">
+			<div>
 				<ul>
-					<li>Name - Fernando Esparrinha Pinto</li>
-					<li>Birthdate - 13-01-1993</li>
-					<li>Nacionality - Portuguese</li>
+					<li>Portfolio</li>
+					<li>About</li>
 				</ul>
 			</div>
-
-			<hr>
-
-			<p>
-				I love programming and everything that is technology related. I like problems that are hard to solve, and that take a lot of time and headaches. Some of my hobbies are playing videogames and riding bicycle. I started programming in 2012 but I always wanted to create things with a computer, especially videogames.
-			</p>
-
-			
-
 		</div>
+
+		<div id="main">
+			<iframe src="./WaveTunnel/index.html" width="800" height="800"></iframe>
+		</div>
+
+		<div id="footer">
+			<ul>
+				<li><a href="mailto:fernando.esparrinha@gmail.com">Email</a></li>
+				<li><a href="https://github.com/FernandoPinto">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/fernandoesparrinha">LinkedIn</a></li>
+				<li><a href="https://www.instagram.com/wavetunnel/">Instagram</a></li>
+			</ul>
+		</div>
+
 	</div>
-
-
-
-	<!-- MODULES -->
-    <script src="js/app.js"></script>
-
-    <!-- CONTROLLERS -->
-    <script src="js/Controllers/MainController.js"></script>
-    <script src="js/Controllers/SkillController.js"></script>
-
-    <!-- DIRECTIVES -->
-    <script src="js/directives/project.js"></script>
-    <script src="js/directives/skill.js"></script>
-</body>
-</html>
+</body

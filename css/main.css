@@ -1,130 +1,89 @@
 /* COLORS */
 body {
-  background-image: url("../resources/background8bit.png");
-  padding: 2%; }
+  background-color: #fff6ee;
+  /* background-color: #4e2200; */
+  margin: 0px;
+  padding: 0px;
+  height: 100%; 
 
-/*MAIN AREAS -> PERSONAL AREA + SKILLS AREA*/
-.main {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.7em;
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  margin-top: 5px;
-  padding: 10px;
-  color: #ddd;
-  text-align: center;
-  box-shadow: 5px 5px 20px 0px #000; }
+  font-family: 'Quantico', sans-serif;
 
-/*PERSONAL AREA*/
-#personalArea {
-  margin-right: 5%; }
-  #personalArea table {
-    margin-left: 45%; }
+}
 
-#homeButton {
+iframe{ border: none; }
+
+* {
+  /* border: red 1px solid; */
+}
+
+#main-container {
+  height: 100%; 
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10px 100px auto 60px;
+  
+}
+
+#header {
+  background-color: #ffe2cc;
+  
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+}
+
+#header div {
+  font-size: 1.5em;
   display: inline;
-  cursor: pointer; }
-  @media screen and (max-width: 568px) {
-    #homeButton {
-      display: none; } }
 
-/*SKILLS AREA*/
-#skillsArea {
-  overflow: auto;
-  overflow-x: hidden; }
-  @media screen and (max-width: 568px) {
-    #skillsArea {
-      display: none; } }
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: end;
+}
 
-#hobbiesPanel {
-  width: 100%;
-  position: absolute;
-  bottom: 5%; }
+#header div ul li {
+  display: inline;
+  padding: 0px 20px;
+}
 
-#contactsPanel {
-  width: 100%;
-  position: absolute;
-  bottom: 5%; }
+#profile-photo {
+  background-image: url("../resources/profile-photo.jpg");
+  background-size: cover;
+  border-radius: 50%;
 
-#miniDescription {
-  display: none; }
-  @media screen and (max-width: 568px) {
-    #miniDescription {
-      display: inline;
-      padding-right: 5%;
-      padding-left: 5%; } }
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
 
-.skill {
-  text-align: center; }
-  .skill img:hover {
-    opacity: 0.5;
-    cursor: pointer; }
+#main {
+  padding: 15px;
+  grid-row-start: 3;
+  grid-row-end: 4; 
 
-.programmingSkill {
+  display: grid;
+}
+
+#main iframe {
+  place-self: center;
+}
+
+#footer {
+  display:inline; 
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#footer ul {
   text-align: center;
-  margin: 15px;
-  padding-bottom: 30px; }
-  .programmingSkill table {
-    color: #ddd; }
+}
 
-/*DIFFERENT SKILL VIEWS*/
-#mainView {
-  display: inline; }
-
-#educationView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#personalView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#professionalAreaView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#cyclingView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#gamingView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#musicView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-#projectView {
-  display: none;
-  padding-right: 5%;
-  padding-left: 5%; }
-
-.imageProfileSize {
-  width: 150px;
-  height: 150px; }
-
-.styledList {
-  text-align: left; }
-  .styledList ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }
-  .styledList ul li {
-    background-image: url("../resources/MarioBullet.png");
-    background-repeat: no-repeat;
-    background-position: 0px center;
-    padding-left: 30px;
-    line-height: 30px; }
-  .styledList ul ol {
-    list-style-type: none; }
-  .styledList ul ol li {
-    background-image: none; }
-
-/*# sourceMappingURL=main.css.map */
+#footer ul li {
+  display: inline;
+  padding: 0px 20px;
+}
