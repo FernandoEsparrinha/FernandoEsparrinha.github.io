@@ -11,23 +11,66 @@
 	<!--JAVASCRIPT-->
 	<script type="text/javascript" src="js/main.js"></script>
 
+	<!-- P5 DRAW -->
+	<script src="p5js/libraries/p5.js"></script>
+	<script src="p5js/libraries/p5.dom.js"></script>
+	<script src="p5js/libraries/quicksettings.js"></script>
+	<script src="p5js/wavetunnel.js"></script>
+	<script src="p5js/helpers/functions.js"></script>
+	<script src="p5js/helpers/variables.js"></script>
+	<script src="p5js/models/Wave.js"></script>
+	<script src="p5js/models/Form.js"></script>
+	<script src="p5js/models/Polygon.js"></script>
+	<script src="p5js/models/PolygonWave.js"></script>
 </head>
 
 <body>
 	<div id="main-container">
 
-		<!-- <div id="header">
+		<div id="header">
 			<div>
-				<ul>
-					<li>Home</li>
-					<li>Portfolio</li>
-					<li>About</li>
+				<ul id="menu">
+					<li>Experience</li>
+					<li>Projects</li>
 				</ul>
 			</div>
-		</div> -->
+		</div>
 
 		<div id="main">
-			<iframe src="./p5js/index.html" width="800" height="800"></iframe>
+			<div id="experience" class="slideFromLeft">
+				<ul>
+					<li>2012</li>
+					<p>FCUP - Computer Science</p>
+					<li>2013</li>
+					<p>ISEP - Informatics Engineering</p>
+					<li>2016</li>
+					<p>Celfocus - IoT Platform Thingworx</p>
+					<li>2018</li>
+					<p>Celfocus - IoT Microservices</p>
+					<p> CIoT Vodafone V-App</p>
+					<li>2019</li>
+					<p>ESAD - Web Platform Management</p>
+				</ul>
+			</div>
+
+			<div id="skills" class="slideFromRight">
+				<ul>
+					<li>Easy learner</li>
+					<li>Always up for a challenge</li>
+					<li>Out-of-box thinker</li>
+					<li>Lazy</li>
+				</ul>
+				<ul>
+					<li>Microservices</li>
+					<li>Internet Of Things</li>
+					<li>Google Cloud Platform</li>
+					<li>Docker</li>
+					<li>Agile</li>
+					<li>Git</li>
+				</ul>
+			</div>
+
+
 		</div>
 
 		<div id="footer">
