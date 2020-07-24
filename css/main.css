@@ -42,8 +42,7 @@ body {
 
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50px auto 60px;
-  
+  grid-template-rows: 5% 90% 5%;
 }
 
 #header {
@@ -110,8 +109,13 @@ body {
 
   display: grid;
   grid-template-columns: 20% auto 20%;
+  grid-template-rows: 100%;
   
-  
+}
+
+#main #experience ul{
+  overflow-y: scroll;
+  height: 100%;
 }
 
 #main #experience{
@@ -119,7 +123,7 @@ body {
   z-index: 4;
   grid-column-start: 1;
   grid-column-end: 2;
-  
+
   width: 100%;
   font-size: 0.7em;
   padding-right: 20px;
