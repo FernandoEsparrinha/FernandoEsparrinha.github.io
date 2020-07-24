@@ -34,14 +34,14 @@ var data = {
             "company": "FCUP",
             "date": 2012,
             "skills": [],
-            "description": "Start of computer studies with emphasis on teory."
+            "description": "Started computer studies with emphasis on theory."
         },
         {
             "title": "Informatics Engineering",
             "company": "ISEP",
             "date": 2013,
             "skills": [],
-            "description": "Changed university due to the need of a more pratical approach into programming."
+            "description": "Changed university due to need of a more pratical approach into programming."
         },
         {
             "title": "IoT Platform Thingworx",
@@ -51,12 +51,20 @@ var data = {
             "description": "Worked on Internet of Things projects, mainly proofs of concept, based on the Thingworx platform, developing skills in Java, Javascript and Linux."
         },
         {
-            "title": " IoT Microservices & CIoT Vodafone V-App",
+            "title": "IoT Microservices & CIoT Vodafone V-App",
             "company": "Celfocus",
             "date": 2018,
             "skills": ["Docker", "Microservices"],
-            "description": "Worked on a Vodafone project which made me develop skills on docker and microservices and experience  an international project with a bigger scope. It was also a big opportunity to apply skills learned in previous years, improving them."
+            "description": "Worked on a Vodafone project, developing skills on docker and microservices and experiencing an international project with a bigger scope. It was also a big opportunity to apply skills learned in previous years, improving them."
+        },
+        {
+            "title": "Web Platform Management",
+            "company": "ESAD",
+            "date": 2019,
+            "skills": ["Web", "Deploying", "Supporting", "SQL", "Google Cloud Platform", "Ruby"],
+            "description": "Developed web based skills and had the opportunity of developing a wide range of skills, due to a small team, such as deploying, maintaining old code, maintaining multiple SQL Databases and supporting applications that were hosted on Google Cloud Platform."
         }
+
     ],
     "projects": [
         {
