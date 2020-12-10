@@ -104,7 +104,7 @@ var data = {
         {
             language: "Web Design (HTML + CSS + JS)",
             name: "PlanIt",
-            category: "Planning App",
+            category: "Programming Competition",
             tags: ["task management", "p5.js", "sound", "web"],
             description: "PlanIt is a mockup developed in Porto Summer of Code '15, which unfortunatly didn't won the contest. The app helped users to plan their events, using a system of priorities and AI to re schedule any events that overlapped each other.",
             site: "https://www.facebook.com/pg/makeorbreak.io/photos/?tab=album&album_id=1672683786309884",
@@ -113,7 +113,7 @@ var data = {
         {
             language: "Web Design (HTML + CSS + JS)",
             name: "+InfoPorto",
-            category: "Turism App",
+            category: "Programming Competition",
             tags: ["web", "turism", "coding competition"],
             description: "+InfoPorto is a mockup that won the 2nd place in Porto Summer of Code '14. The app read QR codes and NFC tags that are located in key places of the city, showing key info about those places, such as who and when it was built and how it affected the city.",
             site: "https://www.facebook.com/pg/makeorbreak.io/photos/?tab=album&album_id=1516594015252196",
