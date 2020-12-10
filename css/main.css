@@ -494,7 +494,7 @@ body {
 
 #modal-body {
   display: grid;
-  overflow: scroll;
+  overflow: hidden;
   padding: 20px;
 }
 
@@ -531,7 +531,7 @@ body {
 }
 
 #modal-description {
-  overflow: scroll;
+  overflow-y: auto;
 } 
 
 #modal-description #project-list ul {
