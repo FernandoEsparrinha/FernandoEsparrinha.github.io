@@ -58,12 +58,16 @@ body {
   .panel .year {
     font-size: 1em;
     color: #F37259;
+    margin: 0;
+    padding: 20px 0 20px 0;
     float: right;
   }
-
+  
   .panel .company {
-    color: #ed9c8b;
     font-size: 2em;
+    color: #ed9c8b;
+    margin: 0;
+    padding: 20px 0 20px 0;
     text-decoration: none;
     float: top;
   }
@@ -187,20 +191,18 @@ body {
   }
   
   .panel h3 {
-    /* font-size: 2em;
-    line-height: 2em; */
     width: 50%;
   }
 
   .panel .year {
     color: #F37259;
-    float: left;
+    text-align: right;
+    float: right;
   }
 
   .panel .company {
     color: #ed9c8b;
-    text-align: right;
-    float: right;
+    float: left;
   }
 
   .panel .description {
