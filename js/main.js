@@ -230,7 +230,7 @@ window.onload = function () {
 
         var title = document.createElement("h1")
         title.textContent = element.name
-        var category = document.createElement("h3")
+        var category = document.createElement("span")
         category.textContent = element.category
 
         title_area.append(title)
