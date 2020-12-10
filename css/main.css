@@ -86,9 +86,12 @@ body {
     height: 100%;
   }
 
-
   #modal-description{
     font-size: 2em;
+  }
+
+  #source-list {
+    padding-bottom: 12vw;
   }
 
   #modal-previous, #modal-next, #back-button {
@@ -115,34 +118,30 @@ body {
   .project-panel {
     display: grid;
     grid-template-rows: 20% 80% 20%;
-    padding: 25px;
-    /* grid-template-columns: 20% 60% 20%; */
-    /* height: 300px; */
+    margin: 0 0 20px 0;
   }
 
   .project-title {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 25% 25%;
     font-size: 1em !important;
   }
 
-  .project-title h1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  .project-title h3 {
-    font-size: 0.8em !important;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
   .project-description {
-    font-size: 1em;
+    font-size: 1em !important;
     padding: 0;
+  }
+
+  .project-links {
+    padding: 30px 0 10px 0;
+  }
+
+  .project-links a {
+    width: 90%;
+    background:rgba(252, 229, 188, 0.2);
+  }
+
   #footer ul li {
     padding: 0px 40px 0px 40px;
   }
@@ -284,9 +283,20 @@ body {
     padding: 25px;
   }
 
-  .project-title h3 {
+  .project-title span {
     font-size: 0.8em ;
-    
+  }
+
+  .project-links a {
+    width: 100px;
+  }
+
+  #footer ul li {
+    padding: 0px 20px 0px 20px;
+  }
+
+  #footer ul li a img {
+    width:2vw;
   }
 }
 
@@ -376,8 +386,20 @@ body {
 
 .project-panel {
   background:rgba(252, 229, 188, 0.2);
-  padding: 10px;
+  padding: 25px;
   margin: 0 0 10px 0;
+}
+
+.project-title h1 {
+  color: #ed9c8b;
+  padding: 0;
+  margin: 0;
+}
+
+.project-title span {
+  color: #F37259;
+  padding: 10px 0 10px 0;
+  margin: 0;
 }
 
 .project-links {
@@ -387,7 +409,6 @@ body {
 
 .project-links a {
   border-radius: 10px;
-  width: 100px;
   height: 100px;
   margin: auto;
   text-align:center;
@@ -462,7 +483,6 @@ body {
 
 #footer ul li {
   display: inline-block;
-  padding: 0px 20px 0px 20px;
   height: 100%;
   width: 10%;
 }
@@ -470,10 +490,6 @@ body {
 #footer ul li a {
   text-decoration: none;
   opacity: 0.8;
-}
-
-#footer ul li a img {
-  width:25px;
 }
 
 
@@ -505,6 +521,14 @@ body {
 #modal-title {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+#modal-job h1 {
+  color: #ed9c8b;
+}
+
+#modal-date{
+  color: #F37259;
 }
 
 #modal-date h4 {
