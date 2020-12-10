@@ -230,13 +230,10 @@ window.onload = function () {
 
         var title = document.createElement("h1")
         title.textContent = element.name
-        var language = document.createElement("h3")
-        language.textContent = element.language
         var category = document.createElement("h3")
         category.textContent = element.category
 
         title_area.append(title)
-        title_area.append(language)
         title_area.append(category)
 
         var description_area = document.createElement("div")
@@ -252,8 +249,6 @@ window.onload = function () {
             site_button.href = element.site
             var site_img = document.createElement("img")
             site_img.src = "./resources/external.png"
-            // site_button.style.backgroundImage = "url(../resources/external.png)";
-            // site_button.textContent = element.site
             site_button.target = "_blank"
             site_button.append(site_img)
             links_area.append(site_button)
