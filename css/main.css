@@ -72,10 +72,6 @@ body {
     float: top;
   }
 
-  #main .close{
-    display: none;
-  }
-
   #modal-tags ul li{
     font-size: 2em;
     margin-right: 8px !important;
