@@ -95,7 +95,7 @@ var data = {
         {
             language: "Javascript",
             name: "WaveTunnel",
-            category: "Visual Dynamic Experience",
+            category: "Dynamic Visuals Experience",
             tags: ["p5.js", "visual", "web", "osc", "midi controller"],
             description: "Always had some curiosity in applying programming in a more artistic product, WaveTunnel was the project were I started exploring p5.js.",
             site: "https://fernandoesparrinha.github.io/WaveTunnel/",
