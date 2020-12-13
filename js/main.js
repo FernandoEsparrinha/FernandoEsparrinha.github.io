@@ -157,6 +157,16 @@ function populateModal(element) {
     // })
 }
 
+
+document.onkeypress = function (evt) {
+    evt = evt || window.event;
+    var charCode = evt.keyCode || evt.which;
+    var charStr = String.fromCharCode(charCode);
+    if (charStr == "p") {
+        window.location.href = 'resources/CV.pdf';
+    }
+};
+
 window.onload = function () {
     var menu = document.getElementById('menu')
     var main = document.getElementById('main')
