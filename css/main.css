@@ -474,7 +474,7 @@ body {
 #footer ul {
   grid-column-start: 2;
   grid-column-end: 3;
-
+  height: 50%;  
   margin: 0px;
   padding: 0px;
   text-align: center;
