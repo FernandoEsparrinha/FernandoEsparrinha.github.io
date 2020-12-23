@@ -116,16 +116,7 @@ body {
   }
 
   .project-panel {
-    display: grid;
-    grid-template-rows: 20% 80% 20%;
     margin: 0 0 20px 0;
-  }
-
-  .project-title {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 25% 25%;
-    font-size: 1em !important;
   }
 
   .project-description {
