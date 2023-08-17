@@ -37,7 +37,7 @@ var data = {
             start_date: "29/02/2016",
             end_date: "01/09/2018",
             sources: ["https://www.celfocus.com/call/index.php/to-know/smart-cities-smart-homes-smart-wear"],
-            skills: ["Internet of things", "Thingworkx", "Java", "Javascript", "Linux"],
+            skills: ["Internet of things", "Java", "Javascript", "Linux", "Thingworkx"],
             short_description: "Worked on Internet of Things projects, mainly proofs of concept, based on the Thingworx platform.",
             full_description: "After finishing the internship Celfocus offered me a contract, I accepted. The change from internship into work was a very subtle one, I continued the exploration of Thingworx and did Proof of Concept projects in the scope of IoT. The projects I worked on had very different environments, which contributed a lot to my knowledge of the world of IoT.",
             projects: {
@@ -72,13 +72,32 @@ var data = {
             type: "Contract",
             year: 2018,
             start_date: "27/09/2018",
-            end_date: "present",
+            end_date: "13/02/2021",
             sources: ["https://me.esad.pt/"],
-            skills: ["Web", "Deploying", "Supporting", "SQL", "Google Cloud Platform", "Ruby"],
+            skills: ["Deploying", "Google Cloud Platform", "Ruby", "SQL", "Supporting", "Web"],
             short_description: "Web based development, while improving a wide range of skills, due to a small team, such as deploying, maintaining old code, managing SQL Databases and supporting applications that were hosted on Google Cloud Platform.",
             full_description: "When I received information that ESAD was looking for a programmer my inicial reaction was hesitant, I was enjoying the Vodafone CIoT Project altough I felt like I needed more experience developing full stack and understanding every aspect of a project. Due to this need and because Design was something that I like, I decided to accept the challenge and got into ESAD. A close friend of mine that worked there was the one that got me to join, and working at ESAD was a great oportunity to learn from him, a full stack web developer. In ESAD, due to a very small team, I managed to learn and improve key aspects of the development of a web application, from the deployment stage to the support of the application. Altough the development was mainly in Ruby, the most explored technology was Google Cloud Platform (GCP) as it was the main pillar of all our platforms. I got to explore deploying and maintaining a SQL database, multiple virtual machines, cloud build CI/CD, multiple web services and more GCP features, at the same time I supported and developed new functionalities on the ME.ESAD platform.",
             projects: {
                 "ME.ESAD": "A web platform that supports all school activities, such as summary creation, student absences, work offers, schedules, library contents and more. This platform has a strong connection to Google, due to all the applications used by the school and user accounts (which are Google accounts), and a software called Sophia, which the school is forced to use due to certification that is needed in order to validate all the information with the portuguese government. One of the biggest challenges in this project is the maintenance of the integration between ME.ESAD and Sophia, which can provide quite intricate problems."
+            }
+        },
+        {
+            title: "Integration Engineer",
+            company: "Farfetch",
+            url: "https://www.farfetch.com",
+            type: "Contract",
+            year: 2021,
+            start_date: "08/03/2021",
+            end_date: "present",
+            sources: [],
+            skills: ["Apache Camel", "Avro", "C#", ".NET", "Java", "Kafka", "Spring boot"],
+            short_description: "Integration engineer developing in multiple technologies such as Apache Camel, Java, Spring boot, C#, .NET, Cassandra and Kafka.",
+            full_description: "During my tenure at Farfetch, I had the privilege of contributing to various technical initiatives. I engaged with integrations using C# and .NET, collaborating with talented teams to ensure efficient data exchange. Additionally, I worked with Java and Spring Boot, crafting reliable backend solutions. I also delved into Apache Camel, enhancing communication between different aspects of the platform. Through these experiences, I played a part in enriching the platform's capabilities, reflecting Farfetch's commitment to innovation and enhancing the e-commerce landscape.",
+            projects: {
+                "Buyback": "The Buyback project at Farfetch aimed to revolutionize the customer experience by offering a unique solution for users looking to sell their pre-owned luxury fashion items. As part of the project, I played a vital role in developing and refining the technical aspects of the buyback process. This involved integrating new partners while supporting existing ones.",
+                "Beauty": "Farfetch, originally known for its focus on luxury fashion, has expanded its offerings to include a diverse range of beauty products from various brands. During my stay at Farfetch I got the chance to contribute to this project by facilitating the seamless integration of EDI systems with our beauty partners. This enabled efficient and automated exchange of crucial business information, enhancing collaboration and streamlining processes.",
+                "Fullfilment by Farfetch": "Fullfilment by Farfetch, also known as FxFF, is a service offered by Farfetch that allows brands and boutiques to leverage Farfetch's global logistics and distribution network to fulfill their customer orders. My work in this project involved orchestrating the integration of various systems and processes, resulting in a cohesive and efficient cross-functional platform that significantly improved the overall operations and collaboration across the organization brands.",
+                "Digital Concessions": "During my time at Farfetch, I had the privilege of contributing to the implementation of the Digital Concessions project. In collaboration with the team, I focused on creating seamless integrations using C#, .NET, Avro, and Kafka, allowing brands to establish their virtual retail spaces within the platform. My role involved supporting the technical backbone of the project, ensuring efficient data exchange through Avro and Kafka, while leveraging C# and .NET for reliable and scalable solutions. This initiative aimed to enrich the platform's diversity and underscore Farfetch's dedication to innovation within the e-commerce landscape."
             }
         }
     ],
