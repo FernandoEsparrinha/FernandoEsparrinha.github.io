@@ -21,6 +21,7 @@ function tooglePanel() {
     var panelName = this.innerText;
     this.classList.toggle("active");
 
+
     switch (panelName) {
         case "Experience":
             var experiencePanel = document.getElementById("experience");
