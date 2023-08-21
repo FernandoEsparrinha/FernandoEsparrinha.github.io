@@ -10,7 +10,7 @@ var data = {
             end_date: "01/01/2012",
             sources: [],
             skills: [],
-            short_description: "Started computer studies with emphasis on theory.",
+            short_description: "I briefly pursued Computer Science at FCUP, exchanging experiences in pursuit of a more practical approach. This period allowed me to gather insights before ultimately transitioning to my chosen path in Computer Engineering at ISEP.",
             full_description: "The choice for computer science was a easy one, it was one of my biggest interests and I was eager to learn the different skills that existed in the world of computers. After a couple of months I realized that the course was heavily based on math and general computer theory, I was feeling an urge to explore computers using a more pratical approach, so I decided to quit the course and got my aim on the Instituto de Engenharia do Porto (ISEP).",
             projects: {}
         },
@@ -24,7 +24,7 @@ var data = {
             end_date: "01/01/2016",
             sources: ["resources/Relatório_PESTI.pdf"],
             skills: [],
-            short_description: "Changed university due to need of a more pratical approach into programming.",
+            short_description: "At ISEP, I pursued Computer Engineering, immersing myself in a comprehensive curriculum that refined my technical skills and deepened my understanding of the field.",
             full_description: "After experiencing classes in FCUP, ISEP seemed to give me more of what I wanted. Classes started straight into pseudocode and programming and were very usefull, altough I feel that I've learned more with friends than on classes. The course mainly focused on java and key aspects of programming such as data structures and algorithms but I always felt an attraction to web development and explored the area while on my free time. The last year of the course consisted in some classes and an internship, associated with a single project. I did my internship on Celfocus, a joint venture between Novabase and Vodafone Portugal, developing the connection between a shirt with hearth sensors and its users and documenting everything to be demonstraded in the end (The report is acessible in the sources down below). This project was my entry into the world of IoT, we used the Thingworx Platform and I got to explore some technologies like communication protocols which I had never heard of (like CoAP and MQTT), technologies that I've learned in ISEP and got to apply in a professional environment (Java, Linux, Jenkins) and even a small integration into the IFTTT platform. At the end, my project got the grade of 17.",
             projects: {}
         },
@@ -38,7 +38,7 @@ var data = {
             end_date: "01/09/2018",
             sources: ["https://www.celfocus.com/call/index.php/to-know/smart-cities-smart-homes-smart-wear"],
             skills: ["Internet of things", "Java", "Javascript", "Linux", "Thingworkx"],
-            short_description: "Worked on Internet of Things projects, mainly proofs of concept, based on the Thingworx platform.",
+            short_description: "At Celfocus, I specialized in crafting IoT proof of concept projects on Thingworx. These projects highlighted the practical applications and capabilities of IoT technology.",
             full_description: "After finishing the internship Celfocus offered me a contract, I accepted. The change from internship into work was a very subtle one, I continued the exploration of Thingworx and did Proof of Concept projects in the scope of IoT. The projects I worked on had very different environments, which contributed a lot to my knowledge of the world of IoT.",
             projects: {
                 "Gas Metering": "Solution to manage several gas sensors, scattered through Portugal. In the platform the user could observe different values of consumption aswell as predictive forecasts through the whole country, being able to choose a district in order to filter the information. The platform could also manage alerts such has warnings about batteries, possible frauds or levels of temperature.",
@@ -75,7 +75,7 @@ var data = {
             end_date: "13/02/2021",
             sources: ["https://me.esad.pt/"],
             skills: ["Deploying", "Google Cloud Platform", "Ruby", "SQL", "Supporting", "Web"],
-            short_description: "Web based development, while improving a wide range of skills, due to a small team, such as deploying, maintaining old code, managing SQL Databases and supporting applications that were hosted on Google Cloud Platform.",
+            short_description: "Worked as a web developer at a School of Design, collaborating with a tight-knit team of three. Our primary focus was enhancing and maintaining the school's portal, ensuring its seamless functionality and swiftly resolving any related issues.",
             full_description: "When I received information that ESAD was looking for a programmer my inicial reaction was hesitant, I was enjoying the Vodafone CIoT Project altough I felt like I needed more experience developing full stack and understanding every aspect of a project. Due to this need and because Design was something that I like, I decided to accept the challenge and got into ESAD. A close friend of mine that worked there was the one that got me to join, and working at ESAD was a great oportunity to learn from him, a full stack web developer. In ESAD, due to a very small team, I managed to learn and improve key aspects of the development of a web application, from the deployment stage to the support of the application. Altough the development was mainly in Ruby, the most explored technology was Google Cloud Platform (GCP) as it was the main pillar of all our platforms. I got to explore deploying and maintaining a SQL database, multiple virtual machines, cloud build CI/CD, multiple web services and more GCP features, at the same time I supported and developed new functionalities on the ME.ESAD platform.",
             projects: {
                 "ME.ESAD": "A web platform that supports all school activities, such as summary creation, student absences, work offers, schedules, library contents and more. This platform has a strong connection to Google, due to all the applications used by the school and user accounts (which are Google accounts), and a software called Sophia, which the school is forced to use due to certification that is needed in order to validate all the information with the portuguese government. One of the biggest challenges in this project is the maintenance of the integration between ME.ESAD and Sophia, which can provide quite intricate problems."
@@ -91,7 +91,7 @@ var data = {
             end_date: "present",
             sources: [],
             skills: ["Apache Camel", "Avro", "C#", ".NET", "Java", "Kafka", "Spring boot"],
-            short_description: "Integration engineer developing in multiple technologies such as Apache Camel, Java, Spring boot, C#, .NET, Cassandra and Kafka.",
+            short_description: "At Farfetch, I thrived as an integration engineer, tackling multiple projects with precision. My role involved seamlessly merging various systems and technologies to ensure cohesive functionality and optimized performance.",
             full_description: "During my tenure at Farfetch, I had the privilege of contributing to various technical initiatives. I engaged with integrations using C# and .NET, collaborating with talented teams to ensure efficient data exchange. Additionally, I worked with Java and Spring Boot, crafting reliable backend solutions. I also delved into Apache Camel, enhancing communication between different aspects of the platform. Through these experiences, I played a part in enriching the platform's capabilities, reflecting Farfetch's commitment to innovation and enhancing the e-commerce landscape.",
             projects: {
                 "Buyback": "The Buyback project at Farfetch aimed to revolutionize the customer experience by offering a unique solution for users looking to sell their pre-owned luxury fashion items. As part of the project, I played a vital role in developing and refining the technical aspects of the buyback process. This involved integrating new partners while supporting existing ones.",
