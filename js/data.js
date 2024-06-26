@@ -88,7 +88,7 @@ var data = {
             type: "Contract",
             year: 2021,
             start_date: "08/03/2021",
-            end_date: "present",
+            end_date: "24/05/2024",
             sources: [],
             skills: ["Apache Camel", "Avro", "C#", ".NET", "Java", "Kafka", "Spring boot"],
             short_description: "At Farfetch, I thrived as an integration engineer, tackling multiple projects with precision. My role involved seamlessly merging various systems and technologies to ensure cohesive functionality and optimized performance.",
