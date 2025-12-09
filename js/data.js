@@ -103,6 +103,15 @@ var data = {
     ],
     "projects": [
         {
+            language: "3D Printing",
+            name: "Gira 3D",
+            category: "3D Printing Service",
+            tags: ["3D printing", "Upcycle"],
+            description: "Gira 3D is a sustainable design studio founded by me, specializing in hybrid product manufacturing. The project merges precise 3D printed components with upcycled materials, specifically recycled plastic and reclaimed wood. I manage the entire closed-loop production, demonstrating expertise in eco-friendly design, digital fabrication, and market entry strategy.",
+            site: "https://www.instagram.com/gira.3d/",
+            github: ""
+        },
+        {
             language: "Javascript",
             name: "H0b0 - Redo",
             category: "Musical Web Experience",

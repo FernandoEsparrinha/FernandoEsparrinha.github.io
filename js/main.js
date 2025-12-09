@@ -65,105 +65,105 @@ function nextModal() {
 }
 
 function populateModal(element) {
-    clearModal()
-    currentExperience = data.experience.indexOf(element)
-    if (currentExperience == 0) {
-        document.getElementById("modal-previous").style.display = "none"
-    } else if (currentExperience == data.experience.length - 1) {
-        document.getElementById("modal-next").style.display = "none"
-    } else {
-        document.getElementById("modal-next").style.display = "block"
-        document.getElementById("modal-previous").style.display = "block"
-    }
+    clearModal();
+    currentExperience = data.experience.indexOf(element);
 
-    // TITLE
-    var header_company = document.createElement("h1")
-    header_company.textContent = element.company
+    // Update navigation buttons
+    document.getElementById("modal-previous").style.display = currentExperience === 0 ? "none" : "block";
+    document.getElementById("modal-next").style.display = currentExperience === data.experience.length - 1 ? "none" : "block";
 
-    var header_title = document.createElement("h2")
-    header_title.textContent = element.title
+    // Populate modal content
+    populateModalHeader(element);
+    populateModalTags(element.skills);
+    populateModalDescription(element.full_description);
+    populateModalProjects(element.projects);
+    populateModalSources(element.sources);
 
-    var date = document.createElement("h4")
-    date.textContent = element.end_date + " - " + element.start_date
-    document.getElementById("modal-date").append(date)
-    document.getElementById("modal-job").append(header_company)
-    document.getElementById("modal-job").append(header_title)
-
-    // TAGS
-    var tag_list = document.createElement("ul")
-    element.skills.forEach(skill => {
-        var tag = document.createElement("li")
-        tag.textContent = skill
-        tag_list.append(tag)
-    });
-    document.getElementById("modal-tags").append(tag_list)
-
-    // DESCRIPTION
-    var description = document.createElement("p")
-    description.textContent = element.full_description
-    document.getElementById("full-description").append(description)
-
-    // PROJECTS
-    if (Object.keys(element.projects).length != 0) {
-        var p_title = document.createElement("h4")
-        if (Object.keys(element.projects).length == 1) {
-            p_title.textContent = "Project"
-        } else {
-            p_title.textContent = "Projects"
-        }
-
-        var project_list = document.createElement("ul")
-        for (var title in element.projects) {
-            var project_item = document.createElement("li")
-            var project_title = document.createElement("span")
-            project_title.textContent = title
-            var project_connect = document.createElement("span")
-            project_connect.innerHTML = "&succ;"
-            var project_description = document.createElement("span")
-            project_description.textContent = element.projects[title]
-
-            project_item.append(project_title)
-            project_item.append(project_connect)
-            project_item.append(project_description)
-
-            project_list.append(project_item)
-        };
-        document.getElementById("project-list").append(p_title)
-        document.getElementById("project-list").append(project_list)
-    }
-    // SOURCES
-    if (element.sources.length != 0) {
-        var sources_list = document.createElement("ul")
-        var s_title = document.createElement("h4")
-        s_title.textContent = "Sources"
-
-        var sources_list = document.createElement("ul")
-        element.sources.forEach(source => {
-            var source_li = document.createElement("li")
-            var source_link = document.createElement("a")
-            source_link.setAttribute("href", source)
-            source_link.textContent = source
-            source_link.target = "_blank"
-            source_li.append(source_link)
-            sources_list.append(source_li)
-        });
-        document.getElementById("source-list").append(s_title)
-        document.getElementById("source-list").append(sources_list)
-    }
-    closePanels()
-    document.getElementById("modal").style.display = "grid"
-
-    // document.getElementById("defaultCanvas0").addEventListener("click", function (event) {
-    //     document.getElementById("modal").style.display = "none"
-    // })
+    closePanels();
+    document.getElementById("modal").style.display = "grid";
 }
 
+function populateModalHeader(element) {
+    const headerCompany = document.createElement("h1");
+    headerCompany.textContent = element.company;
+
+    const headerTitle = document.createElement("h2");
+    headerTitle.textContent = element.title;
+
+    const date = document.createElement("h4");
+    date.textContent = `${element.end_date} - ${element.start_date}`;
+
+    document.getElementById("modal-date").append(date);
+    document.getElementById("modal-job").append(headerCompany, headerTitle);
+}
+
+function populateModalTags(skills) {
+    const tagList = document.createElement("ul");
+    skills.forEach(skill => {
+        const tag = document.createElement("li");
+        tag.textContent = skill;
+        tagList.append(tag);
+    });
+    document.getElementById("modal-tags").append(tagList);
+}
+
+function populateModalDescription(descriptionText) {
+    const description = document.createElement("p");
+    description.textContent = descriptionText;
+    document.getElementById("full-description").append(description);
+}
+
+function populateModalProjects(projects) {
+    if (Object.keys(projects).length === 0) return;
+
+    const title = document.createElement("h4");
+    title.textContent = Object.keys(projects).length === 1 ? "Project" : "Projects";
+
+    const projectList = document.createElement("ul");
+    for (const [titleText, descriptionText] of Object.entries(projects)) {
+        const projectItem = document.createElement("li");
+
+        const projectTitle = document.createElement("span");
+        projectTitle.textContent = titleText;
+
+        const projectConnect = document.createElement("span");
+        projectConnect.innerHTML = "&succ;";
+
+        const projectDescription = document.createElement("span");
+        projectDescription.textContent = descriptionText;
+
+        projectItem.append(projectTitle, projectConnect, projectDescription);
+        projectList.append(projectItem);
+    }
+
+    document.getElementById("project-list").append(title, projectList);
+}
+
+function populateModalSources(sources) {
+    if (sources.length === 0) return;
+
+    const title = document.createElement("h4");
+    title.textContent = "Sources";
+
+    const sourcesList = document.createElement("ul");
+    sources.forEach(source => {
+        const sourceItem = document.createElement("li");
+        const sourceLink = document.createElement("a");
+        sourceLink.setAttribute("href", source);
+        sourceLink.textContent = source;
+        sourceLink.target = "_blank";
+        sourceItem.append(sourceLink);
+        sourcesList.append(sourceItem);
+    });
+
+    document.getElementById("source-list").append(title, sourcesList);
+}
 
 document.onkeypress = function (evt) {
     evt = evt || window.event;
-    var charCode = evt.keyCode || evt.which;
-    var charStr = String.fromCharCode(charCode);
-    if (charStr == "p") {
+    const charCode = evt.keyCode || evt.which;
+    const charStr = String.fromCharCode(charCode).toLowerCase();
+    if (charStr === "p") {
         window.location.href = 'resources/CV.pdf';
     }
 };
