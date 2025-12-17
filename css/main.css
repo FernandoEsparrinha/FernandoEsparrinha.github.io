@@ -95,8 +95,7 @@ body {
   }
 
   #modal-previous,
-  #modal-next,
-  #back-button {
+  #modal-next{
     display: none !important;
   }
 
@@ -141,6 +140,23 @@ body {
 
   #footer ul li a img {
     width: 5vw;
+  }
+
+  #short-bio {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #FCE5BC;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 80%;
   }
 }
 
@@ -292,6 +308,22 @@ body {
 
   #footer ul li a img {
     width: 2vw;
+  }
+
+  #short-bio {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #FCE5BC;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    padding: 10px 20px;
+    border-radius: 8px;
   }
 }
 
@@ -470,7 +502,7 @@ body {
 #footer ul {
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 50%;
+  height: 70%;
   margin: 0px;
   padding: 0px;
   text-align: center;
@@ -578,4 +610,8 @@ body {
 
 #source-list a:visited {
   color: #ac503e;
+}
+
+a {
+    color: #F37259;
 }

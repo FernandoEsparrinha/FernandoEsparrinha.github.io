@@ -39,6 +39,7 @@ function tooglePanel() {
             break;
     }
 
+    document.getElementById("short-bio").style.display = "none";
     document.getElementById("back-button").style.display = "inline"
 }
 
@@ -179,6 +180,7 @@ window.onload = function () {
         closePanels()
         closeModal()
         document.getElementById("back-button").style.display = "none"
+        document.getElementById("short-bio").style.display = "block";
     })
 
     // Click event for menu
@@ -290,4 +292,17 @@ window.onload = function () {
         project_panel.append(links_area)
         projectsPanel.append(project_panel)
     })
+
+    const experienceLink = document.getElementById("experience-link");
+    const projectsLink = document.getElementById("projects-link");
+
+    experienceLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector("#menu li:nth-child(1)").click();
+    });
+
+    projectsLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        document.querySelector("#menu li:nth-child(2)").click();
+    });
 }

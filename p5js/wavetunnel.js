@@ -5,7 +5,7 @@ var numberOfWaves = 0;
 
 function setup() {
   var cnv = createCanvas(windowWidth, windowHeight);
-  cnv.style('z-index', '2');
+  cnv.style('z-index', '1');
   cnv.position(0, 0);
   rectangleWave = new PolygonWave();
 }
