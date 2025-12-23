@@ -89,7 +89,7 @@ var data = {
             year: 2021,
             start_date: "08/03/2021",
             end_date: "24/05/2024",
-            sources: [],
+            sources: ["https://www.retail-systems.com/rs/Farfetch_Partners_Clipper_Logistics_For_Luxury_E_Fulfilment_Venture.php"],
             skills: ["Apache Camel", "Avro", "C#", ".NET", "Java", "Kafka", "Spring boot"],
             short_description: "At Farfetch, I thrived as an integration engineer, tackling multiple projects with precision. My role involved seamlessly merging various systems and technologies to ensure cohesive functionality and optimized performance.",
             full_description: "During my tenure at Farfetch, I had the privilege of contributing to various technical initiatives. I engaged with integrations using C# and .NET, collaborating with talented teams to ensure efficient data exchange. Additionally, I worked with Java and Spring Boot, crafting reliable backend solutions. I also delved into Apache Camel, enhancing communication between different aspects of the platform. Through these experiences, I played a part in enriching the platform's capabilities, reflecting Farfetch's commitment to innovation and enhancing the e-commerce landscape.",
@@ -98,6 +98,24 @@ var data = {
                 "Beauty": "Farfetch, originally known for its focus on luxury fashion, has expanded its offerings to include a diverse range of beauty products from various brands. During my stay at Farfetch I got the chance to contribute to this project by facilitating the seamless integration of EDI systems with our beauty partners. This enabled efficient and automated exchange of crucial business information, enhancing collaboration and streamlining processes.",
                 "Fullfilment by Farfetch": "Fullfilment by Farfetch, also known as FxFF, is a service offered by Farfetch that allows brands and boutiques to leverage Farfetch's global logistics and distribution network to fulfill their customer orders. My work in this project involved orchestrating the integration of various systems and processes, resulting in a cohesive and efficient cross-functional platform that significantly improved the overall operations and collaboration across the organization brands.",
                 "Digital Concessions": "During my time at Farfetch, I had the privilege of contributing to the implementation of the Digital Concessions project. In collaboration with the team, I focused on creating seamless integrations using C#, .NET, Avro, and Kafka, allowing brands to establish their virtual retail spaces within the platform. My role involved supporting the technical backbone of the project, ensuring efficient data exchange through Avro and Kafka, while leveraging C# and .NET for reliable and scalable solutions. This initiative aimed to enrich the platform's diversity and underscore Farfetch's dedication to innovation within the e-commerce landscape."
+            }
+        },
+        {
+            title: "Founder/Lead Developer",
+            company: "Gira 3D",
+            url: "https://linktr.ee/gira3d",
+            type: "Founder",
+            year: 2024,
+            start_date: "01/03/2024",
+            end_date: "present",
+            sources: ["https://linktr.ee/gira3d"],
+            skills: ["3D Printing", "Woodworking", "Business Development", "Upcycling", "Social Media Management", "Content Producer"],
+            short_description: "After a few years working as a software developer, I decided to explore my passion for sustainable design and fabrication and founded Gira 3D, a sustainable design studio that specializes in creating hybrid products by combining precise 3D printed components with upcycled materials such as recycled plastic and reclaimed wood.",
+            full_description: "Gira 3D is a sustainable design studio that I founded, specializing in hybrid product manufacturing. The project merges precise 3D printed components with upcycled materials, specifically recycled plastic and reclaimed wood. I manage the entire closed-loop production, demonstrating expertise in eco-friendly design, digital fabrication, and market entry strategy. Gira 3D reflects my commitment to sustainability and innovation, offering unique products that blend technology with environmental consciousness.",
+            projects: {
+                "3D Printing Service": "Providing 3D printing services that go from prototyping to small-batch production, utilizing various materials and technologies to meet client needs.",
+                "Woodworking": "Creating custom wooden pieces that either complement 3D printed components or are entirely wooden, emphasizing craftsmanship and sustainable sourcing of materials.",
+                "Upcycling": "Incorporating upcycled materials into product designs, transforming waste into valuable and functional items, thereby promoting sustainability and environmental responsibility."
             }
         }
     ],
@@ -117,10 +135,12 @@ var data = {
         {name: "Apache Camel", weight: 6},
         {name: "SQL", weight: 1},
         {name: "C#", weight: 3},
-        {name: "Front-end", weight: 2},
         {name: "Kafka", weight: 6},
+        {name: "Front-end", weight: 2},
+        {name: "Business Development", weight: 6},
         {name: ".NET", weight: 3},
-        {name: "Spring Boot", weight: 7}
+        {name: "Spring Boot", weight: 7},
+        {name: "3D Printing", weight: 8},
     ],
     "projects": [
         {
@@ -129,7 +149,7 @@ var data = {
             category: "3D Printing Service",
             tags: ["3D printing", "Upcycle"],
             description: "Gira 3D is a sustainable design studio founded by me, specializing in hybrid product manufacturing. The project merges precise 3D printed components with upcycled materials, specifically recycled plastic and reclaimed wood. I manage the entire closed-loop production, demonstrating expertise in eco-friendly design, digital fabrication, and market entry strategy.",
-            site: "https://www.instagram.com/gira.3d/",
+            site: "https://linktr.ee/gira3d",
             github: ""
         },
         {
