@@ -31,6 +31,10 @@ function tooglePanel() {
             var projectsPanel = document.getElementById("projects");
             projectsPanel.classList.toggle("visible");
             break;
+        case "Skills":
+            var skillsPanel = document.getElementById("skills");
+            skillsPanel.classList.toggle("visible");
+            break;
         case "Bio":
             var projectsPanel = document.getElementById("bio");
             projectsPanel.classList.toggle("visible");
@@ -278,31 +282,41 @@ window.onload = function () {
             github_button.append(github_img)
             links_area.append(github_button)
         }
-
-
-
-        // project_panel.append(title)
-        // project_panel.append(language)
-        // project_panel.append(category)
-        // project_panel.append(description_text)
-        // project_panel.append(site_button)
-        // project_panel.append(github_button)
+        
         project_panel.append(title_area)
         project_panel.append(description_area)
         project_panel.append(links_area)
         projectsPanel.append(project_panel)
     })
 
-    const experienceLink = document.getElementById("experience-link");
-    const projectsLink = document.getElementById("projects-link");
+    // SKILLS PANEL
+    var skillsPanel = document.getElementById("skills")
+    var skillsList = document.createElement("ul")
+    skillsList.id = "skills-list"
+    data.skills.forEach(skill => {
+        var skill_item = document.createElement("li")
+        skill_item.className = "skill-" + skill.weight
+        skill_item.textContent = skill.name
+        skillsList.append(skill_item)
+    })
+    skillsPanel.append(skillsList)
 
+    const experienceLink = document.getElementById("experience-link")
+    const projectsLink = document.getElementById("projects-link")
+    const skillsLink = document.getElementById("skills-link")
+    
     experienceLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector("#menu li:nth-child(1)").click();
+        e.preventDefault()
+        document.querySelector("#menu li:nth-child(1)").click()
     });
 
     projectsLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector("#menu li:nth-child(2)").click();
+        e.preventDefault()
+        document.querySelector("#menu li:nth-child(2)").click()
+    });
+
+    skillsLink.addEventListener("click", (e) => {
+        e.preventDefault()
+        document.querySelector("#menu li:nth-child(3)").click()
     });
 }

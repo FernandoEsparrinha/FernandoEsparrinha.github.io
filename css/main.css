@@ -1,6 +1,4 @@
-/* COLORS */
 body {
-  /* background-color: #fff6ee; */
   background-color: #292429;
   margin: 0px;
   padding: 0px;
@@ -9,12 +7,6 @@ body {
   font-family: 'Quantico', sans-serif;
   overflow: hidden;
 }
-
-/* 
-* {
-  border: red 1px solid;
-} 
-*/
 
 /* MOBILE */
 @media (max-width: 991px) {
@@ -35,7 +27,6 @@ body {
   }
 
   #main div ul li {
-    width: 45% !important;
     padding-bottom: 20px;
     float: left;
     margin: 0 20px 20px 0;
@@ -43,7 +34,6 @@ body {
 
   #main-container {
     height: 100%;
-
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 5% 90% 5%;
@@ -158,6 +148,30 @@ body {
     border-radius: 8px;
     width: 80%;
   }
+
+  #skills-list {
+    list-style: none;
+    padding: 300 60;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #skills-list li.skill-1 { font-size: 15; }
+  #skills-list li.skill-2 { font-size: 20; }
+  #skills-list li.skill-3 { font-size: 25; }
+  #skills-list li.skill-4 { font-size: 30; }
+  #skills-list li.skill-5 { font-size: 35; }
+  #skills-list li.skill-6 { font-size: 40; }
+  #skills-list li.skill-7 { font-size: 45; }
+  #skills-list li.skill-8 { font-size: 50; }
+  #skills-list li.skill-9 { font-size: 55; }
+
+  #skills-list li:nth-child(2n+1) {color: #fae7c5;}
+  #skills-list li:nth-child(3n+1) {color: #d3bb90;}
+  #skills-list li:nth-child(4n+1) {color: #efc487;}
 }
 
 /* DESKTOP */
@@ -325,6 +339,33 @@ body {
     padding: 10px 20px;
     border-radius: 8px;
   }
+
+  #skills-list {
+    list-style: none;
+    padding: 200;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #skills-list li {
+    padding: 0px 15px;
+  }
+
+  #skills-list li.skill-1 { font-size: 15; }
+  #skills-list li.skill-2 { font-size: 20; }
+  #skills-list li.skill-3 { font-size: 25; }
+  #skills-list li.skill-4 { font-size: 30; }
+  #skills-list li.skill-5 { font-size: 35; }
+  #skills-list li.skill-6 { font-size: 40; }
+  #skills-list li.skill-7 { font-size: 45; }
+  #skills-list li.skill-8 { font-size: 50; }
+  #skills-list li.skill-9 { font-size: 55; }
+
+  #skills-list li:nth-child(2n+1) {color: #fae7c5;}
+  #skills-list li:nth-child(3n+1) {color: #d3bb90;}
+  #skills-list li:nth-child(4n+1) {color: #efc487;}
 }
 
 #header {
@@ -615,3 +656,4 @@ body {
 a {
     color: #F37259;
 }
+

@@ -101,6 +101,27 @@ var data = {
             }
         }
     ],
+    "skills": [
+        {name: "Problem Solving", weight: 9},
+        {name: "Java", weight: 7},
+        {name: "JavaScript", weight: 6},
+        {name: "Web Development", weight: 3},
+        {name: "Internet of Things", weight: 7},
+        {name: "Typescript", weight: 6},
+        {name: "Linux", weight: 6},
+        {name: "Google Cloud Platform", weight: 2},
+        {name: "Thingworx", weight: 3},
+        {name: "Docker", weight: 7},
+        {name: "Microservices", weight: 4},
+        {name: "Ruby", weight: 1},
+        {name: "Apache Camel", weight: 6},
+        {name: "SQL", weight: 1},
+        {name: "C#", weight: 3},
+        {name: "Front-end", weight: 2},
+        {name: "Kafka", weight: 6},
+        {name: ".NET", weight: 3},
+        {name: "Spring Boot", weight: 7}
+    ],
     "projects": [
         {
             language: "3D Printing",
