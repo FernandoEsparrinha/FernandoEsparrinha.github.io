@@ -141,6 +141,9 @@ var data = {
         {name: ".NET", weight: 3},
         {name: "Spring Boot", weight: 7},
         {name: "3D Printing", weight: 8},
+        {name: "RESTful API ", weight: 3},
+        {name: "Git", weight: 8},
+        {name: "CI/CD pipelines", weight: 4},
     ],
     "projects": [
         {
