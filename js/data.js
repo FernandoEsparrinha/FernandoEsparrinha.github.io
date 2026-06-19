@@ -108,7 +108,7 @@ var data = {
             year: 2024,
             start_date: "01/03/2024",
             end_date: "present",
-            sources: ["https://linktr.ee/gira3d"],
+            sources: ["https://gira3d.pt"],
             skills: ["3D Printing", "Woodworking", "Business Development", "Upcycling", "Social Media Management", "Content Producer"],
             short_description: "After a few years working as a software developer, I decided to explore my passion for sustainable design and fabrication and founded Gira 3D, a sustainable design studio that specializes in creating hybrid products by combining precise 3D printed components with upcycled materials such as recycled plastic and reclaimed wood.",
             full_description: "Gira 3D is a sustainable design studio that I founded, specializing in hybrid product manufacturing. The project merges precise 3D printed components with upcycled materials, specifically recycled plastic and reclaimed wood. I manage the entire closed-loop production, demonstrating expertise in eco-friendly design, digital fabrication, and market entry strategy. Gira 3D reflects my commitment to sustainability and innovation, offering unique products that blend technology with environmental consciousness.",
