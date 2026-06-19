@@ -169,7 +169,7 @@ document.onkeypress = function (evt) {
     const charCode = evt.keyCode || evt.which;
     const charStr = String.fromCharCode(charCode).toLowerCase();
     if (charStr === "p") {
-        window.location.href = 'resources/CV.pdf';
+        window.location.href = 'resources/fernando-pinto-software-engineer.pdf';
     }
 };
 
