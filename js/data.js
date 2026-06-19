@@ -103,7 +103,7 @@ var data = {
         {
             title: "Founder/Lead Developer",
             company: "Gira 3D",
-            url: "https://linktr.ee/gira3d",
+            url: "https://gira3d.pt",
             type: "Founder",
             year: 2024,
             start_date: "01/03/2024",
@@ -154,7 +154,7 @@ var data = {
             category: "3D Printing Service",
             tags: ["3D printing", "Upcycle"],
             description: "Gira 3D is a sustainable design studio founded by me, specializing in hybrid product manufacturing. The project merges precise 3D printed components with upcycled materials, specifically recycled plastic and reclaimed wood. I manage the entire closed-loop production, demonstrating expertise in eco-friendly design, digital fabrication, and market entry strategy.",
-            site: "https://linktr.ee/gira3d",
+            site: "https://gira3d.pt",
             github: ""
         },
         {
